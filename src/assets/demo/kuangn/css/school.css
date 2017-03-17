@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/*文章页*/
+
+/*宽度小于768开始*/
+@media (max-width: 768px)
+{
+
+.kuangn-school-banner{
+  	background: #000000;
+}
+.kuangn-school-banner-titel {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+}
+.kuangn-school-banner .banner-mb {
+  width: 100%;
+}
+.kuangn-school-banner-titel{
+	display: none;
+}
+.kuangn-school-infro{
+	padding: 25px 15px;
+	color: #535353;
+	text-align: center;
+}
+.kuangn-school-infro h3{
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+.kuangn-school-infro p{
+	font-size: 12px;
+	line-height: 22px;
+	text-align: left;
+}
+.kuangn-school-list{
+	padding: 20px 10px 10px;
+	background: #F0EFEF;
+}
+.kuangn-school-list ul li{
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+	color: #424242;
+}
+.kuangn-school-list ul li img{
+	width: 120px;
+}
+.kuangn-school-list li h3{
+	font-size: 20px;
+	line-height: 35px;
+	font-weight: bold;
+}
+.kuangn-school-list li p{
+	font-size: 12px;
+	line-height: 16px;
+}
+.wantKnowMore {
+  padding: 40px 0;
+  background: #D5D6D8;
+  text-align: center;
+}
+.wantKnowMore p {
+  font-size: 18px;
+  color: #1F2641;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.wantKnowMore a{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 4px 4px 4px #AFB0B2;
+	font-size: 16px;
+	background: #00AEFF;
+	background: -moz-linear-gradient(top, #00AEFF 0%, #008EFF 100%);
+  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00AEFF), color-stop(100%,#008EFF));
+	background: -webkit-linear-gradient(top, #00AEFF 0%,#008EFF 100%);
+	background: -o-linear-gradient(top, #00AEFF 0%,#008EFF 100%);
+	background: -ms-linear-gradient(top, #00AEFF 0%,#008EFF 100%);
+	background: linear-gradient(to bottom, #00AEFF 0%,#008EFF 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00AEFF', endColorstr='#008EFF',GradientType=0 );
+}
+
+
+}
+
+/**宽度大于768时候1280以上开始**/
+
+@media (min-width: 768px)
+{
+
+.kuangn-school-banner{
+	min-width: 1280px;
+  	background: #000000 url(../images/kuangn-school-banner.jpg) center top no-repeat;
+}
+.kuangn-school-banner .container{
+	height: 454px;
+}
+.kuangn-school-banner-titel {
+  position: absolute;
+  left: 0px;
+  top: 80px;
+}
+.banner-mb{
+	display: none;
+}
+.kuangn-school-infro{
+	padding: 25px 0;
+	color: #535353;
+	text-align: center;
+}
+.kuangn-school-infro h3{
+	font-size: 22px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+.kuangn-school-infro p{
+	font-size: 14px;
+	line-height: 26px;
+	text-align: left;
+}
+.kuangn-school-list{
+	padding: 20px 0 10px;
+	background: #F0EFEF;
+}
+.kuangn-school-list ul{
+	padding: 0 40px;
+}
+.kuangn-school-list ul li{
+	display: inline;
+	float: left;
+	width: 340px;
+	text-align: center;
+	color: #424242;
+	padding: 0 30px;
+}
+.kuangn-school-list li h3{
+	font-size: 28px;
+	line-height: 55px;
+}
+.kuangn-school-list li p{
+	font-size: 18px;
+	line-height: 26px;
+}
+.wantKnowMore {
+  padding: 40px 0;
+  background: #D5D6D8;
+  text-align: center;
+}
+.wantKnowMore p {
+  font-size: 18px;
+  color: #1F2641;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+.wantKnowMore a{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	margin: 0 auto;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 4px 4px 4px #AFB0B2;
+	font-size: 16px;
+	background: #00AEFF;
+	background: -moz-linear-gradient(top,  #3EC2FF 0%, #008EFF 100%);
+  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3EC2FF), color-stop(100%,#008EFF)); 
+    background: -webkit-linear-gradient(top,  #3EC2FF 0%,#008EFF 100%);
+    background: -o-linear-gradient(top,  #3EC2FF 0%,#008EFF 100%);
+    background: -ms-linear-gradient(top,  #3EC2FF 0%,#008EFF 100%);
+    background: linear-gradient(to bottom,  #3EC2FF 0%,#008EFF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3EC2FF', endColorstr='#008EFF',GradientType=0 );
+}
+.wantKnowMore a:hover{
+	background: -moz-linear-gradient(top, #00AEFF 0%, #008EFF 100%);
+  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00AEFF), color-stop(100%,#008EFF));
+	background: -webkit-linear-gradient(top, #00AEFF 0%,#008EFF 100%);
+	background: -o-linear-gradient(top, #00AEFF 0%,#008EFF 100%);
+	background: -ms-linear-gradient(top, #00AEFF 0%,#008EFF 100%);
+	background: linear-gradient(to bottom, #00AEFF 0%,#008EFF 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00AEFF', endColorstr='#008EFF',GradientType=0 );
+}
+
+
+
+}
+
+

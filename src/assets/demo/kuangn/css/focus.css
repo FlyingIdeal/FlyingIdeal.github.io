@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/*匡恩焦点 banner*/
+.kuangn-focus-banner{
+	margin-top: 56px;
+	background: #000000 url(../images/kuangn-focus-banner-bg.jpg) center top no-repeat;
+}
+.kuangn-focus-banner .container{
+	height: 446px;
+	position: relative;
+}
+
+/*焦点列表*/
+.kuangn-focus-list{
+	background: #DFDFDF;
+	padding: 30px 0;
+}
+.kuangn-focus-list-slide .sd span{
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+	cursor: pointer;
+	background: #D3D3D3;
+}
+.kuangn-focus-list-slide .sd span.on {
+	background: #E79E6E;
+}
+
+/*宽度小于768开始*/
+@media (max-width: 768px)
+{
+
+/*banner*/
+.kuangn-focus-banner{
+	margin-top: 42px;
+	background: #FFF;
+}
+.kuangn-focus-banner .container{
+	height: auto;
+}
+.kuangn-focus-banner-titel{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	width: 110px;
+}
+.banner-mb{
+	width: 100%;
+}
+.kuangn-focus-slide{
+	padding: 12px 0;
+	width: 90%;
+	margin: 0 auto;
+}
+.kuangn-focus-slide li{
+	width: 100%;
+	position: relative;
+	margin-bottom: 8px;
+}
+.kuangn-focus-slide li img{
+	width: 100%;
+}
+.kuangn-focus-slide li h3{
+	font-size: 16px;
+	color: #E37023;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom:30px;
+	text-align: center;
+	font-weight: bold;
+}
+.kuangn-focus-video-msak{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background:rgba(0,0,0,0.1) url(../images/kuangn-video-btn.png) center center no-repeat;
+	cursor: pointer;
+	background-size: 18% auto;
+}
+.kuangn-focus-slide-pre{
+	display: none;
+}
+.kuangn-focus-slide-next{
+	display: none;
+}
+.kuangn-focus-list{
+	padding: 10px 0;
+}
+.kuangn-focus-list .container{
+	width: 90%;
+	margin: 0 auto;
+}
+.focus-left-btn{
+	display: none;
+}
+.focus-right-btn{
+	display: none;
+}
+.kuangn-focus-list-slide .sd{
+	padding: 10px 0 10px;
+	text-align: center;
+}
+.kuangn-focus-list-slide .sd span {
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+	cursor: pointer;
+	background: #D3D3D3;
+}
+.kuangn-focus-list-slide .sd span {
+	width: 8px;
+	height: 8px;
+	margin: 0 3px;
+}
+.kuangn-focus-list-slide .sd span.on {
+	background: #E79E6E;
+}
+
+
+
+
+}
+
+/**宽度大于768时候1280以上开始**/
+
+@media (min-width: 768px)
+{
+
+/*banner*/
+.kuangn-focus-banner-titel{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+.kuangn-focus-banner .banner-mb{
+	display: none;
+}
+.kuangn-focus-slide{
+	padding-top: 85px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.kuangn-focus-slide li{
+	display: inline;
+	float: left;
+	width: 400px;
+	height: 270px;
+	position: relative;
+	padding: 40px 0;
+	position: relative;
+	z-index: 1;
+	-webkit-transform-origin :center center;
+	-moz-transform-origin :center center;
+	-o-transform-origin :center center;
+	-ms-transform-origin :center center;
+	transform-origin :center center;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	-o-transition: -o-transform 0.5s;
+	-ms-transition: -ms-transform 0.5s;
+	transition:transform 0.2s;
+}
+.kuangn-focus-slide li.curActive{
+	z-index: 2;
+	-webkit-transform:scale(1.2) translateY(-10px);
+	-moz-transform:scale(1.2) translateY(-10px);
+	-o-transform:scale(1.2) translateY(-10px);
+	-ms-transform:scale(1.2) translateY(-10px);
+	transform:scale(1.2) translateY(-10px);
+}
+.kuangn-focus-slide li.curActive h3{
+	color: #fff;
+}
+.kuangn-focus-slide li img{
+	width: 400px;
+}
+.kuangn-focus-slide li h3{
+	position: absolute;
+	width: 400px;
+	height: 60px;
+	line-height: 60px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #8C8C8C;
+	font-size: 24px;
+	text-indent: 10px;
+	left: 0px;
+	bottom: 40px;
+	background: #000;
+	background: rgba(0,0,0,0.7);
+}
+.kuangn-focus-slide li.curActive .kuangn-focus-video-msak{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: url(../images/kuangn-video-btn.png) center center no-repeat;
+	z-index: 4;
+	cursor: pointer;
+}
+.kuangn-focus-slide-pre{
+	position: absolute;
+	left: -30px;
+	top: 50%;
+}
+.kuangn-focus-slide-next{
+	position: absolute;
+	right: -30px;
+	top: 50%;
+}
+
+.kuangn-focus-slide .bd{
+	width: 1210px;
+}
+/*焦点列表*/
+.kuangn-focus-list-slide{
+	padding: 0 40px;
+	position: relative;
+}
+.kuangn-focus-list-slide ul{
+	height: 408px;
+	overflow: hidden;
+	width: 1200px;
+	box-shadow: 0 0 5px #D0D1D8;
+}
+.kuangn-focus-list-slide li{
+	display: inline;
+	float: left;
+	width: 1200px;
+}
+.focus-left-btn {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	width: 12px;
+	height: 22px;
+	text-indent: -9999px;
+	margin-top: -11px;
+	background: url(../images/focus-left-btn.png) 0 0 no-repeat;
+}
+.focus-right-btn {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	width: 12px;
+	height: 22px;
+	text-indent: -9999px;
+	margin-top: -11px;
+	background: url(../images/focus-right-btn.png) 0 0 no-repeat;
+}
+.kuangn-focus-list-slide .sd{
+	padding: 10px 0;
+	text-align: center;
+}
+.kuangn-focus-list-slide .sd span{
+	width: 16px;
+	height: 16px;
+	margin: 0 10px;
+}
+
+
+}
+
+

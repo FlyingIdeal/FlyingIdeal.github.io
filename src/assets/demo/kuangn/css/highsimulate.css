@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+/*文章页*/
+
+/*宽度小于768开始*/
+@media (max-width: 768px)
+{
+.hightsimulate-part-3 h3{
+	text-align: center;
+}
+.hightsimulate-part-3 .container {
+  	width: 90%;
+  	margin: 0 auto;
+}
+.hightsimulate-part-3 li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/*入侵诱捕平台*/
+.honeycomb-part-2 .container{
+	width: 90%;
+  	margin: 0 auto;
+}
+.honeycomb-part-2 h3{
+	text-align: center;
+}
+.honeycomb-part-2 ul{
+	margin-top: 20px;
+}
+.honeycomb-part-2 li{
+	margin-bottom: 35px;
+	text-align: center;
+}
+.honeycomb-part-2 li h5{
+	margin: 10px 0 5px;
+}
+
+
+}
+
+/**宽度大于768时候1280以上开始**/
+
+@media (min-width: 768px)
+{
+.hightsimulate-part-2{
+	padding: 60px 0;
+}
+.hightsimulate-part-2-right .common-part-infro-right{
+	width: 550px;
+}
+.hightsimulate-part-3{
+	padding: 40px 0;
+	background: #F3F3F3;
+}
+.hightsimulate-part-3 h3{
+	text-align: center;
+}
+.hightsimulate-part-3 ul{
+	padding: 0 40px;
+	margin-top: 20px;
+}
+.hightsimulate-part-3 li{
+	display: inline;
+	float: left;
+	width: 320px;
+	text-align: center;
+	padding: 0 40px;
+}
+
+/*入侵诱捕平台*/
+.honeycomb-part-2 h3{
+	text-align: center;
+}
+.honeycomb-part-2 ul{
+	margin-top: 20px;
+}
+.honeycomb-part-2 li{
+	display: inline;
+	float: left;
+	width: 280px;
+	text-align: center;
+	padding: 0 20px;
+}
+.honeycomb-part-2 li p{
+	line-height: 25px;
+}
+.honeycomb-part-2 li h5{
+	margin: 30px 0 10px;
+}
+.honeycomb-part-2{
+background: -moz-linear-gradient(top, #F7F6F6 0%, #F0F0F0 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F7F6F6), color-stop(100%,#F0F0F0));
+background: -webkit-linear-gradient(top, #F7F6F6 0%,#F0F0F0 100%);
+background: -o-linear-gradient(top, #F7F6F6 0%,#F0F0F0 100%);
+background: -ms-linear-gradient(top, #F7F6F6 0%,#F0F0F0 100%);
+background: linear-gradient(to bottom, #F7F6F6 0%,#F0F0F0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F7F6F6', endColorstr='#F0F0F0',GradientType=0 );
+}
+
+}
+
+

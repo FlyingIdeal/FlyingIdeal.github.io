@@ -1,0 +1,1025 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+html{color:#6D6B66; overflow-x:hidden; font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}
+body,button,input,select,textarea{font: 14px/1.42857 Sinsum,Arial;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+em, i{font-style:normal}
+ul,ol{list-style:none}
+a{text-decoration:none; outline:none; color:#6D6B66; -webkit-tap-highlight-color:rgba(255,255,255,0);}
+a:hover{text-decoration:none;}
+legend{color:#000}
+fieldset,img{border:0}
+button,input,select,textarea{font-size:100%; border:none 0; outline:none; -webkit-appearance: none;}
+table{border-collapse:collapse;border-spacing:0;}
+th, td{text-align: left;}
+img{-ms-interpolation-mode:bicubic; vertical-align:top; border:0}
+textarea{resize:vertical; resize:none;}
+input:focus,textarea:focus{ outline:none;}
+input:-moz-placeholder , textarea:-moz-placeholder , select:-moz-placeholder{ color:#666666;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder , select:-ms-input-placeholder{ color:#666666;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder , select::-webkit-input-placeholder{ color:#666666;}
+.clearfix:after{content:"";display:block;clear:both}.clearfix{zoom:1}
+body{
+	background: #F0F0F0;
+}
+
+/*pc*/
+@media screen and (min-width: 736px){
+
+.Top{
+	background:#FFF url(../images/dh_bj.jpg) repeat-x scroll 0 80px;
+    height: 112px;
+}
+#header {
+    width: 1000px;
+    margin: 0 auto;
+}
+#header .log {
+    height: 80px;
+    width: 1000px;
+    margin: 0 auto;
+}
+#header .log img{
+    display: none;
+}
+.zxdh {
+    height: 80px;
+    width: 227px;
+    float: right;
+    background: url(../images/zxdh.jpg) no-repeat scroll 0 0;
+}
+.log_tu {
+    width: 360px;
+    height: 80px;
+    float: left;
+    background: url(../images/log.jpg) no-repeat scroll 0 0;
+}
+.cctv {
+    height: 80px;
+    width: 227px;
+    float: right;
+    background: url(../images/cctv.jpg) no-repeat scroll 0 0;
+}
+#header .dh {
+    height: 32px;
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 32px;
+    background: url(../images/dh_bj1.jpg) scroll no-repeat 0 0;
+}
+#header .dh_1 {
+    margin-left: 132px;
+    width: 900px;
+}
+.dh a {
+    display: block;
+    float: left;
+    color: #FFF;
+}
+.dh a:hover{
+    color: #01FF4F;
+}
+.bg1 {
+    margin-right: 70px;
+}
+.bg2 {
+    margin-right: 60px;
+}
+.bg3 {
+    margin-right: 60px;
+}
+.bg4 {
+    margin-right: 60px;
+}
+.bg5 {
+    margin-right: 60px;
+}
+.bg6 {
+    margin-right: 70px;
+}
+.bg8 {
+    padding-left: 30px;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.banner{
+	min-width: 1200px;
+	background: url(../images/bannerBg.jpg) center top no-repeat;
+}
+.banner .container{
+	height: 682px;
+}
+.bannerTxt{
+	position: absolute;
+	left:0px;
+	top: 0px;
+}
+.bannerPeople{
+	position: absolute;
+	right: -80px;
+	bottom:0px;
+}
+.videoPart{
+	padding: 60px 0;
+	text-align: center;
+}
+.videoBox {
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+}
+.videoBox iframe{
+    width: 100%;
+    height: 480px;
+}
+.videoTitle{
+	margin-top: 30px;
+}
+.youPart{
+    padding: 40px 0;
+    text-align: center;
+}
+.youPart h2{
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #83807B;
+    font-size: 46px;
+    color: #64635E;
+    font-family: '微软雅黑';
+    margin-top: 60px;
+}
+.youPart h2 strong{
+    color: #444443;
+}
+.youPart ul{
+    padding: 75px 0 65px;
+}
+.youPart li{
+    display: inline;
+    float: left;
+    margin: 0 30px;
+}
+.peopleInfro{
+    background: #FFF;
+    padding: 30px 0 75px 0;
+    font-family: '汉仪细中圆简';
+}
+.peopleInfro h3{
+    font-size: 46px;
+    display: inline-block;
+    color: #333434;
+    border-bottom: 1px solid #444443;
+    height: 100px;
+    line-height: 100px;
+    clear: both;
+}
+.peopleTxt{
+    padding: 60px 0 0 35px;
+}
+.peopleImg{
+    display: inline;
+    float: left;
+    width: 300px;
+}
+.peopleImg img{
+    width: 100%;
+}
+.peopleTxt p{
+    font-size: 30px;
+    line-height: 60px;
+    display: inline;
+    float: left;
+    padding:0 20px 0 25px;
+    width: 820px;
+    text-align: left;
+}
+.qingPart{
+    padding: 40px 0;
+    text-align: center;
+}
+.qingPart_1{
+    background: #FFF;
+    padding: 30px 0;
+    font-family: '汉仪中等线简';
+    margin-top: 60px;
+    position: relative;
+}
+.qingPart_1 .qingpartImg{
+    padding: 35px 35px 35px 200px;
+    border: 2px solid #D2D2D2;
+    display: inline;
+    float: right;
+    margin-right: 30px;
+}
+.qingPart_1 .qingpartTitle{
+    position: absolute;
+    top: 160px;
+    left: 0px;
+    width: 625px;
+    background: #FFF;
+    font-size: 36px;
+    line-height: 60px;
+    color: #52504D;
+    padding: 20px 0;
+}
+.qingPart_1 .qingpartTitle strong{
+    font-size: 40px;
+    color: #2E2E2E;
+}
+.qingPart_1 h3{
+    clear: both;
+    font-size: 48px;
+    color: #6D6B66;
+    padding-top: 30px;
+    font-style: italic;
+}
+.qingPart_1 h3 strong{
+    font-size: 52px;
+    color: #050505;
+    font-weight: normal;
+}
+.qingPart_2{
+    background: #FFF;
+    padding: 70px;
+    font-family: '汉仪中等线简';
+    margin-top: 90px;
+}
+.qingPart_2 h2{
+    display: none;
+}
+.qingPart_2Box{
+    border: 2px solid #D2D2D2;
+    position: relative;
+    padding: 40px 90px 20px 6px;
+}
+.qingpartImg{
+    display: inline;
+    float: left;
+}
+.qingPart_2_Icon{
+    position: absolute;
+    right: -28px;
+    top: 40px;
+}
+.qingPart_2Box .qingPart_2_1{
+    display: inline;
+    float: right;
+    width: 540px;
+    text-align: right;
+}
+.qingPart_2Box p{
+    display: none;
+}
+.qingPart_3{
+    background: #FFF;
+    padding: 70px;
+    font-family: '汉仪中等线简';
+    margin-top: 90px;
+}
+.qingPart_3 h2{
+    display: none;
+}
+.qingPart_3Box {
+    border: 2px solid #D2D2D2;
+    position: relative;
+    padding: 40px 30px 20px 10px;
+}
+.qingPart_3Box .qingpartImg{
+    position: absolute;
+    left: -28px;
+    top: 40px;
+}
+.qingPart_3_1{
+    display: inline;
+    float: right;
+}
+.qingPart_3Box p{
+    display: none;
+}
+.guoPart {
+    padding: 40px 0;
+    text-align: center;
+}
+.guopartImg{
+    background: #FFF;
+    padding: 30px;
+}
+.guopartImg img{
+    width: 100%;
+}
+.faPart {
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+.faPart h2 {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid #83807B;
+    font-size: 46px;
+    color: #64635E;
+    margin-top: 60px;
+}
+.faPeople_2{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.faPeople_1{
+    position: absolute;
+    right: -70px;
+    top: 0px;
+}
+.faList{
+    position: relative;
+    height: 2408px;
+    background: url(../images/faListBg.png) center top no-repeat;
+}
+.faList h4{
+    display: none;
+}
+.faList li{
+    padding: 6px 10px 20px;
+    background: #FFF;
+    background: rgba(255,255,255,0.75);
+    font-size: 24px;
+    line-height: 30px;
+    position: absolute;
+    width: 530px;
+    text-align: left;
+}
+.faList-1{
+    right: 8px;
+    top: 200px;
+}
+.faList-2{
+    left: 8px;
+    top: 350px;
+}
+.faList-3{
+    right: 8px;
+    top: 510px;
+}
+.faList-4{
+    left: 8px;
+    top: 700px;
+}
+.faList-5{
+    right: 8px;
+    top: 875px;
+}
+.faList-6{
+    left: 8px;
+    top: 1110px;
+}
+.faList-7{
+    right: 8px;
+    top: 1275px;
+}
+.faList-8{
+    left: 8px;
+    top: 1440px;
+}
+.faList-9{
+    right: 8px;
+    top: 1650px;
+}
+.faList-10{
+    left: 8px;
+    top: 1870px;
+}
+.faList-11{
+    right: 8px;
+    top: 2040px;
+}
+.faList-12{
+    left: 8px;
+    top: 2230px;
+}
+.hangPart{
+    padding: 130px 0 40px;
+    text-align: center;
+}
+.hangPartBox{
+    border: 1px solid #B5B0AA;
+    margin-top: 70px;
+    padding: 60px 30px 60px 60px;
+}
+.hangPartBox_1 .hangTxt{
+    display: inline;
+    float: left;
+    width: 460px;
+    background: url(../images/hangPartWenhao.png) center center no-repeat;
+    font-size: 50px;
+    color: #8D8A85;
+    line-height: 70px;
+    font-family: '黑体';
+    text-align: left;
+}
+.hangPartBox_1 .hangImg{
+    display: inline;
+    float: right;
+}
+.hangPartBox_2 {
+    padding-top: 145px;
+}
+.hangPartBox_2 .hangImg{
+    display: inline;
+    float: left;
+    width: 460px;
+}
+.hangPartBox_2 .hangImg img{
+    width: 100%;
+}
+.hangPartBox_2 .hangTxt{
+    display: inline;
+    float: right;
+    width: 588px;
+    background: url(../images/hangPartGan.png) center center no-repeat;
+    font-size: 24px;
+    color: #666460;
+    line-height: 60px;
+    font-family: '方正准圆简体';
+    text-align: left;
+}
+.myPart{
+    padding: 40px 0;
+    text-align: center;
+}
+.myPart h2, .myPart h3{
+    display: none;
+}
+.myPart .myPartImg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.myPartList{
+    padding-top: 100px;
+}
+.myPartList li{
+    margin-bottom: 50px;
+}
+.myPartList li img{
+    display: inline;
+    float: right;
+}
+.myPartList p{
+    display: inline;
+    float: right;
+    padding: 20px 15px;
+    width: 670px;
+    background: #FFF;
+    font-size: 30px;
+    line-height: 54px;
+    color: #6A6964;
+    font-family: '华文细黑';
+    text-align: left;
+    margin-right: 30px;
+    margin-top: -20px;
+}
+.sanPart{
+    padding: 40px 0;
+    text-align: center;  
+}
+.sanPart img{
+    width: 100%;
+}
+.zhuanPart {
+    padding: 130px 0 40px;
+    text-align: center;
+}
+.zhuanPart h2{
+    font-size: 72px;
+    color: #454544;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    text-align: left;
+}
+.zhuanPart h2.z-1{
+    margin: 50px 0;
+}
+.zhuanPart h2.z-2{
+    margin: 50px 0 80px;
+    text-align: right;
+}
+.zhuanPartImg img{
+    width: 100%;
+}
+.zhuanPartImg2 img{
+    width: 100%;
+}
+.partnerPart{
+    padding: 40px 0;
+    text-align: center;
+}
+.partnerPart img{
+    width: 100%;
+}
+.footer{
+    padding: 80px 0;
+    text-align: center;
+}
+.footImg{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footName{
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.footName h3{
+    font-size: 48px;
+    color: #3E3F3F;
+    font-family: '微软雅黑'
+}
+.footName p{
+    font-size: 36px;
+    color: #5C5B56;
+    font-family: '微软雅黑';
+}
+.linkPhone{
+    padding: 20px 0;
+    font-size: 40px;
+    color: #3E3F3F;
+    font-family: '微软雅黑';
+}
+.linkPhone a{
+    margin-right: 60px;
+    color: #3E3F3F; 
+}
+
+
+}
+
+/*移动端*/
+@media only screen and (max-width: 735px){
+
+
+.Top{
+    background:#FFF;
+}
+#header {
+    width: 100%;
+    margin: 0 auto;
+}
+.zxdh {
+    display: inline;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+.zxdh img{
+    width: 80%;
+}
+.log_tu img{
+    width: 100%;
+}
+.cctv {
+    text-align: center;
+    width: 50%;
+    float: left;
+    display: inline;
+}
+.cctv img{
+    width: 80%;
+}
+#header .dh {
+    background:#0182EA;
+
+}
+.dh a {
+    display: inline;
+    float: left;
+    color: #FFF;
+    width: 25%;
+    text-align: center;
+    padding: 8px 0;
+}
+.dh a:hover{
+    color: #01FF4F;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.banner{
+    background: url(../images/bannerBg.jpg) center top no-repeat;
+    overflow: hidden;
+}
+.bannerTxt{
+    text-align: center;
+    position: relative;
+}
+.bannerTxt img{
+    width: 100%;
+}
+.bannerPeople{
+    position: absolute;
+    right: -80px;
+    bottom:0px;
+    width: 100%;
+    text-align: right;
+}
+.bannerPeople img{
+    width: 60%;
+}
+.videoPart{
+    padding: 30px 0;
+    text-align: center;
+}
+.videoTitle{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.videoTitle img{
+    max-width: 100%;
+}
+.youPart{
+    padding: 20px 10px;
+    text-align: center;
+}
+.videoBox{
+    padding:0 10px;
+}
+.videoBox iframe{
+    width: 100%;
+    height: 240px;
+}
+.partTitle img{
+    max-width: 100%;
+}
+.youPart h2{
+    display: inline-block;
+    border-bottom: 1px solid #83807B;
+    font-size: 24px;
+    color: #64635E;
+    font-family: '微软雅黑';
+    margin-top: 30px;
+}
+.youPart h2 strong{
+    color: #444443;
+}
+.youPart ul{
+    padding: 30px 0;
+}
+.youPart li{
+    display: inline;
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+.youPart li img{
+    width: 80%;
+}
+.peopleInfro{
+    background: #FFF;
+    padding: 20px 0;
+    font-family: '汉仪细中圆简';
+}
+.peopleInfro h3{
+    font-size: 20px;
+    display: block;
+    color: #333434;
+    border-bottom: 1px solid #444443;
+    padding: 10px 0;
+    clear: both;
+}
+.peopleTxt{
+    padding: 10px;
+}
+.peopleImg img{
+    width: 50%;
+}
+.peopleTxt p{
+    font-size: 16px;
+    line-height: 1.667;
+    padding-top:10px;
+    text-align: left;
+}
+.qingPart{
+    padding: 20px 10px;
+    text-align: center;
+}
+.qingPart_1{
+    background: #FFF;
+    padding: 20px 0;
+    font-family: '汉仪中等线简';
+    margin-top: 30px;
+}
+.qingPart_1 .qingpartImg{
+    float: inherit;
+    display: block;
+}
+.qingPart_1 .qingpartImg img{
+    width: 100%;
+}
+.qingPart_1 .qingpartTitle{
+    background: #FFF;
+    font-size: 18px;
+    line-height: 1.667;
+    color: #52504D;
+    padding: 10px 0;
+}
+.qingPart_1 .qingpartTitle strong{
+    font-size: 20px;
+    color: #2E2E2E;
+}
+.qingPart_1 h3{
+    font-size: 16px;
+    color: #6D6B66;
+    padding-top: 15px;
+    font-style: italic;
+}
+.qingPart_1 h3 strong{
+    font-size: 18px;
+    color: #050505;
+    font-weight: normal;
+}
+.qingPart_2{
+    background: #FFF;
+    padding: 20px 0;
+    font-family: '汉仪中等线简';
+    margin-top: 40px;
+}
+.qingPart_2 h2{
+    background: #FFF;
+    font-size: 18px;
+    line-height: 1.667;
+    color: #52504D;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.qingpartImg img{
+    width: 60%;
+}
+.qingPart_2_Icon{
+    display: none;
+}
+.qingPart_2Box .qingPart_2_1{
+    display: none;
+}
+.qingPart_2Box p{
+    font-size: 16px;
+    color: #6D6B66;
+    padding: 15px 10px 0;
+    text-align: left;
+    line-height: 1.667;
+}
+.qingPart_3{
+    background: #FFF;
+    padding: 20px 0;
+    font-family: '汉仪中等线简';
+    margin-top: 40px;
+}
+.qingPart_3 h2{
+    background: #FFF;
+    font-size: 18px;
+    line-height: 1.667;
+    color: #52504D;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.qingPart_3Box .qingpartImg{
+    display: none;
+}
+.qingPart_3_1 img{
+    width: 60%;
+}
+.qingPart_3Box p{
+    font-size: 16px;
+    color: #6D6B66;
+    padding: 15px 10px 0;
+    text-align: left;
+    line-height: 1.667;
+}
+.guoPart {
+    padding: 20px 10px;
+    text-align: center;
+}
+.guopartImg{
+    background: #FFF;
+    padding: 20px 10px;
+    margin-top: 30px;
+}
+.guopartImg img{
+    width: 100%;
+}
+.faPart {
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+     overflow: hidden;
+}
+.faPart h2 {
+    display: inline-block;
+    border-bottom: 1px solid #83807B;
+    font-size: 22px;
+    color: #64635E;
+    font-family: '微软雅黑';
+    margin-top: 30px;
+}
+.faPeople_2{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    text-align: left;
+}
+.faPeople_2 img{
+    width: 50%;
+}
+.faPeople_1{
+    position: absolute;
+    right: -70px;
+    top: 0px;
+    text-align: right;
+   
+}
+.faPeople_1 img{
+    width: 50%;
+}
+.faList{
+    padding: 30px 0;
+}
+.faList h4{
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: center;
+    color: #333434;
+}
+.faList li{
+    padding: 10px;
+    background: rgba(255,255,255,0.75);
+    font-size: 14px;
+    line-height: 1.667;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.hangPart{
+    padding: 30px 10px;
+    text-align: center;
+}
+.hangPartBox{
+    border: 1px solid #B5B0AA;
+    margin-top: 30px;
+    padding: 10px;
+}
+.hangPartBox_1 .hangTxt{
+    font-size: 16px;
+    color: #8D8A85;
+    line-height: 1.667;
+    font-family: '黑体';
+    text-align: left;
+    padding: 10px 0;
+}
+.hangPartBox_1 .hangImg img{
+    width: 100%;
+}
+.hangPartBox_2 {
+    padding-top: 20px;
+}
+.hangPartBox_2 .hangImg img{
+    width: 100%;
+}
+.hangPartBox_2 .hangTxt{
+    font-size: 16px;
+    color: #8D8A85;
+    line-height: 1.667;
+    font-family: '黑体';
+    text-align: left;
+    padding: 10px 0;
+}
+.myPart{
+    padding: 20px 10px;
+    text-align: center;
+    font-family: '汉仪中等线简';
+}
+.myPart h2{
+    font-size: 18px;
+    line-height: 1.667;
+    color: #52504D;
+}
+.myPart h3{
+    font-size: 16px;
+    line-height: 1.667;
+    color: #52504D;
+}
+.myPart .myPartImg{
+    display: none;
+}
+.myPartList{
+    padding-top: 40px;
+}
+.myPartList li{
+    margin-bottom: 30px;
+}
+.myPartList li img{
+    display: inline;
+    float: right;
+    width: 20%;
+}
+.myPartList p{
+    display: inline;
+    float: right;
+    padding: 4px 1%;
+    width: 76%;
+    background: #FFF;
+    font-size: 14px;
+    line-height: 1.667;
+    color: #6A6964;
+    font-family: '华文细黑';
+    text-align: left;
+    margin-right: 2%;
+}
+.sanPart{
+    padding: 20px 10px;
+    text-align: center;  
+}
+.sanPart img{
+    width: 100%;
+}
+.zhuanPart {
+    padding: 20px 10px;
+    text-align: center;
+}
+.zhuanPart h2{
+    font-size: 20px;
+    color: #454544;
+    font-family: '微软雅黑';
+    font-weight: bold;
+    text-align: left;
+}
+.zhuanPart h2.z-1{
+    margin: 30px 0 20px;
+}
+.zhuanPart h2.z-2{
+    margin: 20px 0 30px;
+    text-align: right;
+}
+.zhuanPartImg img{
+    width: 100%;
+}
+.zhuanPartImg2 img{
+    width: 100%;
+}
+.partnerPart{
+    padding: 20px 10px;
+    text-align: center;
+}
+.partnerPart img{
+    width: 100%;
+}
+.footer{
+    padding: 20px 10px;
+    text-align: center;
+}
+.footImg img{
+    width: 40%;
+}
+.footName{
+    padding: 10px 0;
+}
+.footName h3{
+    font-size: 16px;
+    color: #3E3F3F;
+    font-family: '微软雅黑'
+}
+.footName p{
+    font-size: 14px;
+    color: #5C5B56;
+    font-family: '微软雅黑';
+}
+.linkPhone{
+    padding: 10px 0;
+    font-size: 13px;
+    color: #3E3F3F;
+    font-family: '微软雅黑';
+}
+.linkPhone a{
+    margin-right: 20px;
+    color: #3E3F3F; 
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
