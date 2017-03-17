@@ -65,7 +65,7 @@
 	display:block; 
 	width:32px; 
 	height:40px; 
-	background:rgba(19,20,21,0.5) url(../imgaes/slider-arrow.png) -110px 5px no-repeat; 
+	background:rgba(19,20,21,0.5); 
 	filter:alpha(opacity=50);opacity:0.5;
 }
 .banner .next{ 
@@ -270,7 +270,7 @@
 	display:block; 
 	width:32px; 
 	height:40px; 
-	background:rgba(19,20,21,0.5) url(../images/slider-arrow.png) -110px 5px no-repeat; 
+	background:rgba(19,20,21,0.5); 
 	filter:alpha(opacity=50);opacity:0.5;
 }
 .banner .next{ 
