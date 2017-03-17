@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Expires" CONTENT="-1">
+<title>2015羊年快乐</title>
+<link type="text/css" rel="stylesheet" href="css/basic.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!--移动端版本兼容 -->
+<script type="text/javascript">
+	var phoneWidth =  parseInt(window.screen.width);
+	var phoneScale = phoneWidth/640;
+	var ua = navigator.userAgent;
+	if (/Android (\d+\.\d+)/.test(ua)){
+		var version = parseFloat(RegExp.$1);
+		if(version>2.3){
+			document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+		}else{
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+	};
+</script>
+<!--移动端版本兼容 end-->
+</head>
+<body>
+<div class="main">
+	<!--第一页-->
+	<img class="gesture" src="images/gesture.png" />
+	<img class="p1_1" src="images/p1_1.png" />
+	<img class="p1_2 p1_2_on" src="images/p1_2.png" />
+	<!--第二页-->
+	<img class="p2_1 zhi" src="images/p2_1.png" />
+	<div class="p2_1_mask"></div>
+	<img class="p2_2 zhi" src="images/p2_2.png" />
+	<img class="p2_3 zhi" src="images/p2_3.png" />
+	<img class="p2_4 zhi" src="images/p2_4.png" />
+	<img class="p2_5 zhi" src="images/p2_5.png" />
+	<img class="yang_1 yang" src="images/yang_1.png" />
+	<img class="yang_2 yang" src="images/yang_2.png" />
+	<img class="yang_3 yang" src="images/yang_3.png" />
+	<img class="yang_4 yang" src="images/yang_4.png" />
+	<img class="yang_5 yang" src="images/yang_5.png" />
+	<img class="yang_6 yang" src="images/yang_6.png" />
+	<img class="yang_7 yang" src="images/yang_7.png" />
+	<img class="yang_8 yang" src="images/yang_8.png" />
+	<!--第三页-->
+	<img class="p3_1" width="0" height="0" src="images/p3_1.png" />
+	<!--第四页-->
+	<img class="p4_1" src="images/p4_1.png" />
+	<img class="p4_2" src="images/p4_2.png" />
+	<div class="p4_1_mask"></div>
+	<!--第五页-->
+	<img class="p5_1" src="images/p5_1.png" />
+</div>
+<div sytle="display:none;">
+	<audio id="video" autoplay loop="loop">
+	  <source src="newyear.mp3" type="audio/mpeg" />
+		Your browser does not support the audio element.
+	</audio>
+</div>
+</body>
+</html>

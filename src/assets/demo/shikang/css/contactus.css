@@ -1,0 +1,263 @@
+﻿@charset "utf-8";
+
+/*pc*/
+@media screen and (min-width: 736px){
+	.contact_top{
+		background:#000 url(../images/contactus_banner.jpg) center top no-repeat;
+		background-size: cover;
+	}
+	.contact_banner{
+		padding-top: 200px;
+		text-align: left;
+		text-indent: 50px;
+		height: 315px;
+	}
+
+	/*whyus_hos*/
+	.line-console_title{
+		position: relative;
+		text-align: center;
+		font-size: 24px;
+		color: #333333;
+		padding: 10px 0;
+		margin-bottom: 40px;
+	}
+	.line-console_title span{
+		display: inline-block;
+		padding: 0 20px;
+		background: #FFF;
+	}
+	.line-console_title:before{
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		width: 100%;
+		height: 1px;
+		background: #E8E8E8;
+		z-index: -1;
+	}
+	/*Contact Us*/
+	.contactus_us{
+		padding: 60px 0 0;
+	}
+	.contactus_mes{
+		display: inline;
+		float: left;
+		margin-left: 75px;
+		width: 300px;
+		padding-left: 200px;
+		height: 291px;
+		background: url(../images/contact_mess_bg.jpg) 0 0 no-repeat;
+	}
+	.contactus_mes li{
+		margin-bottom: 22px;
+	}
+	.contactus_mes input{
+		padding: 5px 10px;
+		height: 20px;
+		line-height: 20px;
+		font-size: 16px;
+		color: #999999;
+		width: 280px;
+		background: transparent;
+	}
+	.contactus_mes li.liThird{
+		margin-bottom: 16px;
+	}
+	.contactus_mes li.last{
+		margin-bottom: 0px;
+	}
+	.contactus_mes textarea{
+		padding: 5px 10px;
+		width: 280px;
+		background: transparent;
+		height: 130px;
+	}
+	.contactus_mes_btnBox{
+		overflow: hidden;
+		margin-top: 10px;
+	}
+	.contactus_mes_subBtn{
+		display: inline;
+		float: right;
+		width: 110px;
+		height: 40px;
+		background: url(../images/homeIcon.png) -720px -174px no-repeat;
+	}
+	.contactus_mes_empBtn{
+		display: inline;
+		float: right;
+		width: 110px;
+		height: 40px;
+		background: url(../images/homeIcon.png) -890px -174px no-repeat;
+		margin-left: 10px;
+	}
+	.contact_txt{
+		padding-left: 35px;
+		display: inline;
+		float: left;
+		width: 590px;
+	}
+	.contact_txt h3{
+		font-size: 24px;
+		color: #666666;
+		line-height: 20px;
+		height: 50px;
+	}
+	.contact_txt p{
+		font-size: 16px;
+		color: #313131;
+		margin-bottom: 20px;
+		position: relative;
+		padding-left: 50px;
+	}
+	.contact_txt p i{
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		margin-top: -20px;
+		width: 40px;
+		height: 40px;
+		background: url(../images/homeIcon.png) no-repeat;
+	}
+	.contact_txt p i.address{
+		background-position: -720px -224px;
+	}
+	.contact_txt p i.tell{
+		background-position: -760px -224px;
+	}
+	.contact_txt p i.link{
+		background-position: -800px -224px;
+	}
+	.contact_txt p i.s{
+		background-position: -840px -224px;
+	}
+	.contact_txt p i.email{
+		background-position: -880px -224px;
+	}
+
+}
+
+/*移动端*/
+@media only screen and (max-width: 735px){
+	.contact_top{
+		background: url(../images/contactus_banner.jpg) center center repeat;
+		background-size: cover;
+	}
+	.contact_banner{
+		padding: 70px 10px;
+		text-align: center;
+	}
+	.contact_banner img{
+		width: 50%;
+	}
+
+	.line-console_title{
+		position: relative;
+		text-align: center;
+		font-size: 16px;
+		color: #333333;
+		padding: 10px 0;
+		margin-bottom: 10px;
+	}
+	.line-console_title span{
+		display: inline-block;
+		padding: 0 20px;
+		background: #FFF;
+	}
+	.line-console_title:before{
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		width: 100%;
+		height: 1px;
+		background: #E8E8E8;
+		z-index: -1;
+	}
+	/*Contact Us*/
+	.contactus_us{
+		padding: 10px;
+    	margin-top: 10px;
+	}
+	.contactus_mes li{
+		margin-bottom: 20px;
+	}
+	.contactus_mes input{
+		padding:10px 2%;
+		height: 20px;
+		line-height: 20px;
+		font-size: 14px;
+		color: #999999;
+		width: 96%;
+		background: #EDEBE9;
+	}
+	.contactus_mes textarea{
+		padding:10px 2%;
+		line-height: 20px;
+		width: 96%;
+		background: #EDEBE9;
+		height: 130px;
+	}
+	.contactus_mes_btnBox{
+		overflow: hidden;
+		text-align: center;
+	}
+	.contactus_mes_subBtn{
+		display: inline-block;
+		width: 110px;
+		height: 40px;
+		margin: 0 10px;
+		background: url(../images/homeIcon.png) -720px -174px no-repeat;
+	}
+	.contactus_mes_empBtn{
+		display: inline-block;
+		width: 110px;
+		height: 40px;
+		margin: 0 10px;
+		background: url(../images/homeIcon.png) -890px -174px no-repeat;
+	}
+	.contact_txt{
+		margin-top: 30px;
+	}
+	.contact_txt h3{
+		font-size: 16px;
+		color: #666666;
+		line-height: 20px;
+		height: 50px;
+	}
+	.contact_txt p{
+		font-size: 16px;
+		color: #313131;
+		margin-bottom: 20px;
+		position: relative;
+		padding-left: 45px;
+		word-break:break-all;
+	}
+	.contact_txt p i{
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		margin-top: -20px;
+		width: 40px;
+		height: 40px;
+		background: url(../images/homeIcon.png) no-repeat;
+	}
+	.contact_txt p i.address{
+		background-position: -720px -224px;
+	}
+	.contact_txt p i.tell{
+		background-position: -760px -224px;
+	}
+	.contact_txt p i.link{
+		background-position: -800px -224px;
+	}
+	.contact_txt p i.s{
+		background-position: -840px -224px;
+	}
+	.contact_txt p i.email{
+		background-position: -880px -224px;
+	}
+}
+

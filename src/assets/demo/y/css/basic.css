@@ -1,0 +1,48 @@
+﻿@charset "utf-8";
+/************************初始化**************************************/
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,form,input,button{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}h2{font-size:14px}ul,ol li{list-style:none}body{font-size:12px;margin:0 auto;color:#6c6c6c;font-family:"方正兰亭细黑简体",Helvetica;background:#F2F2F2;-webkit-text-size-adjust:none}fieldset,img{border:0}img{vertical-align:top}input,textarea{border:none 0}a{text-decoration:none;color:#666}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}
+input{ outline: none;}
+#loading{position:fixed;left:0px;top:0px;width:100%;height:100%;background:#FFFFFF url(../images/loading.gif) center center no-repeat;z-index:100;text-indent:-9999px;}
+.wrap{ width: 640px; height: 1136px; overflow: hidden; margin: 0 auto; background: #000000;}
+.swiper{ width: 640px; height: 1136px; overflow: hidden;}
+.sChild{ width: 640px; height: 1136px; position: relative; overflow:hidden; -webkit-backface-visibility: hidden; -webkit-transform-style: preserve-3d;}
+
+@-webkit-keyframes shake{0%,100%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}@keyframes shake{0%,100%{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);-ms-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);-ms-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}.shake{-webkit-animation-name:shake;animation-name:shake}
+
+@-webkit-keyframes upDownBtn{0%{opacity:0;-webkit-transform:translateY(20px);transform:translateY(20px)}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}}
+@keyframes upDownBtn{0%{opacity:0;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px)}100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}
+#upDownBtn{ position: fixed; left: 50%; bottom: 30px; z-index: 1000; margin: -15px 0 0 -28px;}
+#upDownBtn img
+{
+	-webkit-animation: upDownBtn 3s linear infinite;
+	-moz-animation: upDownBtn 3s linear infinite;
+	-o-animation: upDownBtn 3s linear infinite;
+	animation: upDownBtn 3s linear infinite;
+}
+
+.page1{ position: relative; width: 640px; height: 1136px; background: url(../images/p1Bg.jpg) center top no-repeat;}
+.p1_1{ position: absolute; bottom: 20px; padding:0 40px; line-height: 40px; color: #FFFFFF; font-size: 25px; text-align: left;}
+
+.page2{width: 640px; height: 640px; overflow: hidden; position: relative;}
+.inSlide{ width: 640px; height: 640px; overflow: hidden;}
+.inChild{ width: 640px; height: 640px; display: inline; float: left;}
+.page2 .inTitle{ position: absolute; left: 0px; top: 490px; z-index: 10; background: #000000; background: rgba(0,0,0,0.5);}
+.page2 .point{ position: absolute; left: 500px; top: 210px; z-index: 1;
+	-webkit-animation: shake 3s linear infinite;
+	-moz-animation: shake 3s linear infinite;
+	-o-animation: shake 3s linear infinite;
+	animation: shake 3s linear infinite;
+}
+p.inIntro{ padding: 10px 40px 0; line-height: 40px; color: #FFFFFF; font-size: 25px;}
+.url{ text-align: right;}
+
+.page3{position: relative; width: 640px; height: 1136px; background: url(../images/p3Bg.jpg) center top no-repeat;}
+.page3 .list{ padding-left: 35px;}
+.page3 .list li{ margin-bottom: 10px; overflow: hidden;}
+.page3 .list li span{ width: 9px; height: 143px; display: inline; float: left; margin-right: 8px; background: #CD4A4A;}
+.page3 .list li p{ background: #FFFFFF; line-height: 35px; font-size: 25px; color: #232323; padding: 10px 20px; display: inline; float: left; width: 505px; height: 123px;}
+.page3 .list li:nth-child(2n) span{ background: #9D9D9D;}
+.page3 .list li:nth-child(2n) p{color:#FFFFFF; background: none;}
+.page3 .list li:last-child{ margin-bottom: 0px;}
+
+

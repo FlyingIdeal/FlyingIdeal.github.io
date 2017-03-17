@@ -1,0 +1,249 @@
+@charset "utf-8";
+
+/*文章页*/
+
+/*宽度小于768开始*/
+@media (max-width: 768px)
+{
+
+/*crumb*/
+.crumb-box{
+	display: none;
+}
+
+/*W文章*/
+.kuangn-article-center{
+	padding: 5px 0 10px;
+}
+.kuangn-article{
+	margin-top: 42px;
+	padding: 10px 0;
+}
+.kuangn-article-title{
+	font-size: 14px;
+	color: #33A3F4;
+	text-align: center;
+	line-height: 20px;
+	padding: 0 5%;
+	margin-bottom: 10px;
+}
+.kuangn-article-banner{
+	text-align: center;
+}
+.kuangn-article-banner img{
+	max-width: 100%;
+}
+p.kuangn-article-time{
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	color: #424242;
+	border-bottom: 1px solid #959595;
+	width: 90%;
+	margin: 0 auto;
+}
+.kuangn-article-share{
+	padding: 5px 0;
+	margin: 0 auto;
+	width: 230px;
+}
+.shareTo-icon{
+	display: inline;
+	float: left;
+	height: 16px;
+	line-height: 16px;
+	margin: 6px 0px;
+	font-size: 12px;
+	background: url('../images/shareTo-icon.jpg') 0 0 no-repeat;
+	background-size: 16px auto;
+	padding-left: 24px;
+}
+.kuangn-article-share .bdshare-button-style0-32 a{
+	width: 16px;
+	height: 16px;
+	background-size:16px auto;
+}
+.kuangn-article-share .bdshare-button-style0-32 .bds_weixin{
+	background-position: 0 -806px;
+}
+.kuangn-article-share .bdshare-button-style0-32 .bds_tsina{
+	background-position: 0 -52px;
+}
+.kuangn-article-share .bdshare-button-style0-32 .bds_qzone{
+	background-position: 0 -26px;
+}
+.kuangn-article-share .bdshare-button-style0-32 .bds_bdhome{
+	background-position: 0 -78px;
+}
+.kuangn-article-share .bdshare-button-style0-32 .bds_mail{
+	background-position: 0 -1170px;
+}
+.kuangn-article-share .bdshare-button-style0-32 .bds_sqq {
+	background-position: 0 -1326px;
+}
+.kuangn-article-infro{
+	text-align: center;
+	padding: 0 5%;
+}
+.kuangn-article-infro p{
+	line-height: 18px;
+	margin:8px 0px;
+	font-size: 12px;
+	color: #565555;
+	text-indent: 20px;
+	text-align: left;
+}
+.kuangn-article-infro img{
+	max-width: 100%;
+}
+.kuangn-side-bar{
+	width: 90%;
+	margin: 0 auto;
+}
+.kuangn-side-list-title{
+	font-size: 15px;
+	color: #fff;
+	background: #006AC5;
+	text-indent: 14px;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #33A3F4;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	border-radius: 3px;
+}
+.kuangn-side-list{
+	padding: 0px 10px;
+}
+.kuangn-side-list li{
+	padding: 8px 0;
+	border-bottom: 1px solid #D2D2D2;
+}
+.kuangn-side-list li:last-child{
+	border-bottom:none;
+}
+.kuangn-side-list li a{
+	font-size: 13px;
+	color: #163260;
+	line-height: 20px;
+	display: block;
+}
+.kuangn-side-list li p{
+	font-size: 12px;
+	color: #424242;
+	line-height: 16px;
+}
+
+
+}
+
+/**宽度大于768时候1280以上开始**/
+
+@media (min-width: 768px)
+{
+
+
+/*文章内容*/
+.kuangn-article-center{
+	padding: 65px 0;
+	background: #fff;
+}
+.kuangn-article{
+	display: inline;
+	float: left;
+	width: 855px;
+}
+.kuangn-article-title{
+	font-size: 32px;
+	color: #33A3F4;
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.kuangn-article-banner{
+	text-align: center;
+}
+.kuangn-article-banner img{
+	width: 800px;
+}
+p.kuangn-article-time{
+	text-align: center;
+	height: 58px;
+	line-height: 58px;
+	font-size: 20px;
+	color: #424242;
+	border-bottom: 1px solid #959595;
+}
+.kuangn-article-share{
+	padding: 15px 0;
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+.shareTo-icon{
+	display: inline;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	margin: 6px 12px 6px 0;
+	font-size: 18px;
+	background: url('../images/shareTo-icon.jpg') 0 0 no-repeat;
+	padding-left: 35px;
+}
+.kuangn-article-infro {
+	text-align: center;
+}
+.kuangn-article-infro p{
+	line-height: 34px;
+	margin-bottom: 25px;
+	font-size: 18px;
+	color: #565555;
+	text-indent: 35px;
+	text-align: left;
+}
+.kuangn-article-infro img{
+	max-width: 855px;
+}
+.kuangn-side-bar{
+	display: inline;
+	float: right;
+	width: 400px;
+}
+.kuangn-side-list-title{
+	font-size: 24px;
+	color: #fff;
+	background: #006AC5;
+	text-indent: 24px;
+	height: 58px;
+	line-height: 58px;
+	border: 1px solid #33A3F4;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	border-radius: 3px;
+}
+.kuangn-side-list{
+	padding: 20px 15px;
+}
+.kuangn-side-list li{
+	padding: 15px 0;
+	border-bottom: 1px solid #D2D2D2;
+}
+.kuangn-side-list li a{
+	font-size: 16px;
+	color: #163260;
+	line-height: 30px;
+	display: block;
+}
+.kuangn-side-list li p{
+	font-size: 14px;
+	color: #424242;
+	line-height: 20px;
+}
+
+
+}
+
+

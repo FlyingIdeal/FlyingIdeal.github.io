@@ -1,0 +1,91 @@
+﻿@charset "utf-8";
+/************************初始化**************************************/
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,form,input,button{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}h2{font-size:14px}ul,ol li{list-style:none}body{font-size:12px;margin:0 auto;color:#6c6c6c;font-family:"微软雅黑",Helvetica;background:#FBFCFE;-webkit-text-size-adjust:none}fieldset,img{border:0}img{vertical-align:top}input,textarea{border:none 0}a{text-decoration:none;color:#666}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}.clearfix:after{content:"";display:block;clear:both}.clearfix{zoom:1}
+/*wrap*/
+.wrap{ margin: 0 auto; max-width: 640px; background: #000;}
+/*show*/
+.show{width:100%; position: relative; background:#000; color:#fff; overflow:hidden; -webkit-perspective:1500px; -webkit-transition:-webkit-transfrom 1s linear;}
+/*左边字体showLeft*/
+.showLeft{width:50%; position: absolute; top:0; left:0; overflow:hidden; z-index:100; background:#000; -webkit-transform-origin:left center; -webkit-transition:-webkit-transform 1s linear;}
+#huajie{position: absolute; top:35%; right:40px; width:170px; height:95px; line-height:95px; color:#04E3FE; font-size:80px; font-family: '方正兰亭大黑简体';  text-shadow:2px 2px 5px #fff,2px 0px 5px #fff,0px 2px 5px #fff,-2px -2px 5px #fff,-2px 0px 5px #fff,0px -2px 5px #fff,-2px 2px 5px #fff; opacity:0; -webkit-transition:opacity 2s linear,text-shadow 1s linear,color 1s linear; }
+#fajue{position: absolute; top:53%; right:0px; width:100%; height:95px; line-height:95px; color:#04E3FE; font-size:80px; font-family: '方正兰亭大黑简体';  text-align: right; text-shadow:2px 2px 5px #fff,2px 0px 5px #fff,0px 2px 5px #fff,-2px -2px 5px #fff,-2px 0px 5px #fff,0px -2px 5px #fff,-2px 2px 5px #fff; opacity:0; -webkit-transition:opacity 2s linear,text-shadow 1s linear,color 1s linear; }
+/*右边字体showRight*/
+.showRight{width:50%; position: absolute; top:0; right:0; overflow:hidden; z-index: 100;background:#000; -webkit-transform-origin:right center;-webkit-transition:-webkit-transform 1s linear;}
+#ldnt{width:260px; height:65px; color:#04E3FE; font-size:60px; position: absolute; top:37%; font-family: '方正兰亭大黑简体'; text-shadow:2px 2px 5px #fff,2px 0px 5px #fff,0px 2px 5px #fff,-2px -2px 5px #fff,-2px 0px 5px #fff,0px -2px 5px #fff,-2px 2px 5px #fff; opacity:0; -webkit-transition:opacity 2s linear,text-shadow 1s linear,color 1s linear}
+#sjqn{width:260px; height:65px; color:#04E3FE; font-size:60px; position: absolute; top:55%; left: 13%; font-family: '方正兰亭大黑简体'; text-shadow:2px 2px 5px #fff,2px 0px 5px #fff,0px 2px 5px #fff,-2px -2px 5px #fff,-2px 0px 5px #fff,0px -2px 5px #fff,-2px 2px 5px #fff; opacity:0; -webkit-transition:opacity 2s linear,text-shadow 1s linear,color 1s linear}
+/*左右移动文字*/
+#lep1{background: url(../images/font1.png) left center repeat-x; background-size:500px; -webkit-animation:'sz' 10s linear infinite;}
+#rip1{background: url(../images/font1.png) repeat-x; background-size:500px; background-position:-160px center; -webkit-animation:'sc'10s linear infinite; }
+#lep2{background: url(../images/font2.png) left center repeat-x; background-size:500px;-webkit-animation:'sz2' 11s linear infinite;}
+#rip2{background: url(../images/font2.png) repeat-x; background-size:500px; background-position:-160px center; -webkit-animation:'sc2'11s linear infinite;}
+#lep3{background: url(../images/font3.png) left center repeat-x;background-size:500px;-webkit-animation:'sz3' 8s linear infinite;}
+#rip3{background: url(../images/font3.png) repeat-x;background-size:500px;background-position:-160px center;-webkit-animation:'sc3' 8s linear infinite;}
+#lep4{background: url(../images/font4.png) left center repeat-x;background-size:500px;-webkit-animation:'sz4' 15s linear infinite;}
+#rip4{background: url(../images/font4.png) repeat-x;background-size:500px;background-position:-160px center;-webkit-animation:'sc4'15s linear infinite;}	
+#lep5{background: url(../images/font5.png) left center repeat-x;background-size:500px;-webkit-animation:'sz5' 16s linear infinite;}
+#rip5{background: url(../images/font5.png) repeat-x;background-size:500px;background-position:-160px center;-webkit-animation:'sc5'16s linear infinite;}	
+#lep6{background: url(../images/font6.png) left center repeat-x;background-size:500px;-webkit-animation:'sz6' 7s linear infinite;}
+#rip6{background: url(../images/font6.png) repeat-x;background-size:500px;background-position:-160px center;-webkit-animation:'sc6'7s linear infinite;}	
+#lep7{background: url(../images/font7.png) left center repeat-x;background-size:500px;-webkit-animation:'sz7' 10s linear infinite;}
+#rip7{background: url(../images/font7.png) repeat-x;background-size:500px;background-position:-160px center;-webkit-animation:'sc7'10s linear infinite;}	
+#lep8{background: url(../images/font8.png) left center repeat-x;background-size:500px;-webkit-animation:'sz8' 15s linear infinite;}
+#rip8{background: url(../images/font8.png) repeat-x;background-size:500px;background-position:-160px center;-webkit-animation:'sc8'15s linear infinite;}	
+#lep9{background: url(../images/font9.png) left center repeat-x;background-size:500px;-webkit-animation:'sz9' 9s linear infinite;}
+#rip9{background: url(../images/font9.png) repeat-x;background-size:500px;background-position:-160px center;-webkit-animation:'sc9'9s linear infinite;}
+@-webkit-keyframes sz{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz2{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc2{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz3{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc3{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz4{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc4{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz5{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc5{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz6{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc6{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz7{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc7{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz8{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc8{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes sz9{0%{background-position: 0px center}100%{background-position: 500px center}}
+@-webkit-keyframes sc9{0%{background-position: -160px center}100%{background-position: 340px center}}
+@-webkit-keyframes pointOut{0%{-webkit-transform:scale(10,15)}100%{-webkit-transform:scale(1,1)}}
+@-webkit-keyframes pointOn{0%{clip:rect(0px 198px 0px 0px)}100%{clip:rect(0px 198px 256px 0px)}}
+@-webkit-keyframes inductor{0%{-webkit-transform:translateY(0px)}50%{-webkit-transform:translateY(256px)}100%{-webkit-transform:translateY(0px)}}
+/*第二页*/
+.showLogo{position: absolute; top:0; left:0; width:100%; background:#000 url(../images/erbeijing.jpg) center top no-repeat; background-size:100% 100%; -webkit-transition:opacity 0.8s linear,-webkit-transform 0.8s linear; opacity:0; overflow:hidden; z-index: 10;}
+.showTitle{position: absolute; top:25%; width:100%; height:85px; -webkit-transition:opacity 1.4s linear;opacity:0;}
+.showTitleIn{width:96%; margin:0 auto; position:relative; height:85px; z-index: 20}
+.showTiLeft{position: absolute; width:50%; left:0; top:0;}
+.showTiRight{position: absolute; width:50%; right:0; top:0; text-align: right;}
+.bigFont{font-size:70px; font-family: '方正兰亭大黑简体'; color:#04D4EE; display:inline-block; -webkit-perspective:400px; -webkit-transform-style:preserve-3d;}
+.smallFont{font-size:56px; font-family: '方正兰亭大黑简体';}
+#b1{-webkit-transform: translateZ(400px); display:block; -webkit-transition:-webkit-transform 1s linear; -webkit-transform-origin:left center;}
+#b2{-webkit-transform: translateZ(400px); display:block; -webkit-transition:-webkit-transform 1s linear; -webkit-transform-origin:right center;}
+#b3{-webkit-transform: translateZ(400px); display:block; -webkit-transition:-webkit-transform 1s linear; -webkit-transform-origin:left center;}
+#b4{-webkit-transform: translateZ(400px); display:block; -webkit-transition:-webkit-transform 1s linear; -webkit-transform-origin:right center;}
+.dsjp{ width:100%; position: absolute; top:34%; text-align:center; font-size:30px; height:60px; line-height: 60px; color: #FEDC69; overflow:hidden; opacity:0; -webkit-transition:opacity 600ms linear;}
+/*第二页*/
+.pointOut{width:198px; height:256px; margin:0 auto; position:absolute; top:50%; left:0px; right:0px; border:1px solid #fff; -webkit-animation:'pointOut' 800ms ease 0s infinite;display:none;}
+.point{width:198px; height:256px; margin:0px auto; position: absolute; top:50%; left:0px; right:0px; display:none; background:url(../images/pointBg.png) center center no-repeat; background-size:100%;}
+.pointOn{width:198px; height:256px; position: absolute; z-index: 40; background:url(../images/pointOn.png) center center no-repeat; background-size:100%; -webkit-animation:'pointOn' 1s linear infinite;clip:rect(0px 80px 0px 0px); display:none;}
+.inductor{width:100%; height:5px;background:#fff; -webkit-box-shadow:0px 8px 15px #fff,0px -8px 15px #fff; position: absolute; -webkit-animation:'inductor' 1s linear 0s infinite;z-index: 99} 
+.tishi{width:100%; text-align:center; height:30px; line-height: 30px; color:#fff; position: absolute; top:75%; font-size:18px; display:none;}
+
+/*第三页*/
+#sbox{width:100%; -webkit-transition:-webkit-transfrom 1s linear,background 1s linear; color:red; position: relative; opacity:0; overflow:hidden;}
+.Experts{width:100%; height:200px; background:#000 url(../images/erbeijing.jpg) no-repeat center top; background-size:100% 100%; color:#fff; overflow:hidden; position:absolute; -webkit-transition:-webkit-transform 600ms linear;}
+.expIntro1{width:282px; display:block;position: absolute; right:0; top:2%;-webkit-transform:translateX(282px);-webkit-transition:-webkit-transform 400ms linear;}
+.expIntro2{width:527px; display:block;position: absolute; right:0; top:15%;-webkit-transform:translateX(527px);-webkit-transition:-webkit-transform 400ms linear;}
+.expIntro3{width:544px; display:block;position: absolute; right:0; top:40%;-webkit-transform:translateX(544px);-webkit-transition:-webkit-transform 400ms linear;}
+.expIntro4{width:536px; display:block;position: absolute; right:0; top:70%;-webkit-transform:translateX(536px);-webkit-transition:-webkit-transform 400ms linear;}
+
+
+
+
+
+
+
+
+

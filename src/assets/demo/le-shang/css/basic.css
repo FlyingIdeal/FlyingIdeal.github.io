@@ -1,0 +1,317 @@
+﻿@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+html{color:#2B2015; overflow:-moz-scrollbars-vertical ; font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}
+body,button,input,select,textarea{font: 14px/1.42857 "Microsoft Yahei", "Helvetica Neue","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+em, i{font-style:normal}
+ul,ol{list-style:none}
+a{text-decoration:none; outline:none; color:#2B2015; -webkit-tap-highlight-color:rgba(255,255,255,0);}
+a:hover{text-decoration:none;}
+legend{color:#000}
+fieldset,img{border:0}
+button,input,select,textarea{font-size:100%; border:none 0; outline:none; -webkit-appearance: none;}
+table{border-collapse:collapse;border-spacing:0;}
+th, td{text-align: left;}
+img{-ms-interpolation-mode:bicubic; vertical-align:top; border:0; pointer-events: none;}
+textarea{resize:vertical; resize:none;}
+input:focus,textarea:focus{ outline:none;}
+input:-moz-placeholder , textarea:-moz-placeholder , select:-moz-placeholder{ color:#666666;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder , select:-ms-input-placeholder{ color:#666666;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder , select::-webkit-input-placeholder{ color:#666666;}
+.clearfix:after{content:"";display:block;clear:both}.clearfix{zoom:1}
+
+body{
+	background: #000;
+}
+.wrap{
+	width: 640px;
+	margin: 0 auto;
+	padding: 15px 0 70px;
+	text-align: center;
+	position: relative;
+	background:#3099E4 url(../images/s-bg.jpg) center top no-repeat;
+}
+.s-banner{
+	position: relative;
+	z-index: 1;
+}
+/*预热*/
+.s-residueTime{
+	font-size: 26px;
+	width: 550px;
+	height: 95px;
+	line-height: 80px;
+	margin: 20px auto 0px;
+	background: url(../images/s-residueTime.png) 0 0 no-repeat;
+}
+.s-residueTime span{
+	font-size: 40px;
+	color: #FF0F24;
+	margin: 0 10px;
+}
+p.wordTips{
+	font-size: 24px;
+	color: #FFFFFF;
+	padding: 12px 0 4px;
+	margin-top: 15px;
+}
+.s-openVip a{
+	display: inline-block;
+}
+/*立即领取*/
+.s-rightBtn{
+	margin: 20px auto 30px;
+}
+.s-rightBtn a{
+	display: inline-block;
+}
+/*券已领完 明日再战*/
+.s-getEndBtn{
+	margin: 20px auto 30px;
+}
+.s-getEndBtn a{
+	display: inline-block;
+}
+/*会员兑换码*/
+.s-cdkeyBg{
+	width: 500px;
+	height: 130px;
+	padding-left: 50px;
+	padding-top: 20px;
+	margin: 30px auto 20px;
+	text-align: left;
+	font-size: 14px;
+	background: url(../images/s-cdkeyBg.png) center top no-repeat;
+}
+.s-cdkeyBg h4{
+	font-size: 24px;
+}
+.s-cdkeyBg h5{
+	color: #FE0004;
+	font-size: 24px;
+}
+.s-cdkeyBg p a{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.s-exchangeBtn{
+	margin: 20px auto 34px;
+}
+.s-exchangeBtn a{
+	display: inline-block;
+}
+/*今日剩余解说券*/
+.s-residue{
+	position: absolute;
+	right: 30px;
+	top: 100px;
+	width: 150px;
+	height: 37px;
+	background: url(../images/s-residue.png) center top no-repeat;
+	font-size: 24px;
+	color: #FF0F24;
+	padding-top: 30px;
+}
+/*活动规则*/
+.s-gameRule{
+	width: 552px;
+	margin: 0 auto;
+}
+.rule-1{
+	height: 90px;
+	padding-top: 60px;
+	background: url(../images/rule-1.png) 0 0 no-repeat;
+}
+.rule-8{
+	height: 50px;
+	padding-top: 70px;
+	padding-left: 30px;
+	text-align: left;
+	background: url(../images/rule-8.png) 0 0 no-repeat;
+}
+.rule-8 a{
+	 width: 130px;
+	 height: 40px;
+	 display: block;
+	 text-indent: -9999px;
+}
+/*share*/
+.shareMask{
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	background: rgba(0,0,0,0.5);
+}
+.shareCenter{
+	width: 640px;
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+}
+/*活动结束*/
+.s-endBg{
+	width: 550px;
+	height: 95px;
+	line-height: 80px;
+	text-align: center;
+	margin: 20px auto 0;
+	background: url(../images/s-endBg.png) center top no-repeat;
+	font-size: 26px;
+}
+/*好事同分享*/
+.h-wrap{
+	background:#00C9DC url(../images/h-bg.jpg) center top no-repeat;
+}
+.h-residue {
+    position: absolute;
+    left: 60px;
+    top: 115px;
+    width: 150px;
+    height: 37px;
+    background: url(../images/h-residue.png) center top no-repeat;
+    font-size: 24px;
+    color: #FF0F24;
+    padding-top: 30px;
+    z-index: 1;
+}
+.h-banner {
+	padding-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.winList{
+	margin-top: -2px;
+	padding: 10px 40px;
+	background: url(../images/rule-line-bg.png) center top repeat-y;
+}
+.winList li{
+	border-top: 1px solid #DBD7D2;
+	padding: 20px 0;
+	position: relative;
+}
+.winList .userPhoto{
+	display: inline;
+	float: left;
+	width: 50px;
+}
+.winList .userPhoto img{
+	max-width: 100%;
+}
+.userInfro{
+	padding:0 120px 0 20px;
+	display: inline;
+	float: left;
+	width: 280px;
+	text-align: left;
+}
+.userInfro h4{
+	font-size: 24px;
+	color: #4C4947;
+}
+.userInfro p{
+	font-size: 14px;
+	color: #4C4947;
+}
+.userInfro p span{
+	margin-left: 20px;
+}
+.priseIcon{
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -18px;
+}
+.cdkeyPhoto{
+	display: inline;
+	float: left;
+	width: 75px;
+}
+.cdkeyPhoto img{
+	width: 100%;
+}
+.h-cdkeyBg{
+	padding-left: 30px;
+	width: 520px;
+	padding-top: 30px;
+	height: 120px;
+}
+.cdkeyTxt{
+	display: inline;
+	float: left;
+	width: 250px;
+	margin-left: 20px;
+	margin-top: -5px;
+}
+.hasAfter{
+	padding-top: 30px;
+	width: 550px;
+	height: 120px;
+	background: url(../images/hasAfterBg.png) center top no-repeat;
+	margin: 40px auto 0;
+	font-size: 24px;
+	color: #232322;
+	line-height: 32px;
+}
+.h-openVip{
+	margin: 15px 0 35px;
+}
+/*pc*/
+.pcwrap{
+	min-width: 1024px;
+}
+.pc-bg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(../images/pc-bg.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.pc-main{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.pc-main .title{
+	background: #fff;
+	background: rgba(255,255,255,0.1);
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+.pc-main .title img{
+	vertical-align: middle;
+}
+.pcBanner{
+	text-align: center;
+	padding-top: 30px;
+}
+/*404*/
+.wrap404{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background:#E5E4E2 url(../images/404bottom.jpg) center bottom no-repeat;
+}
+.title404{
+	position: fixed;
+	left: 0px;
+	top: 50%;
+	width: 100%;
+	height: 450px;
+	margin-top: -225px;
+	text-align: center;
+	font-size: 30px;
+}
+
