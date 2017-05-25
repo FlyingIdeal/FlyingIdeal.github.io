@@ -218,6 +218,19 @@
 	.product_myopia_img a{
 		display: block;
 	}
+	.product_glasses_list li.col-2{
+		width: 524px;
+	}
+	.product_glasses_list li.col-2 .product_style_in{
+		height: 109px;
+	}
+	.product_glasses_list li.col-3{
+		width: 324px;
+		margin-top: 20px;
+	}
+	.product_glasses_list li.col-3 .product_style_in{
+		height: 188px;
+	}
 }
 
 /*移动端*/
@@ -449,6 +462,11 @@
 	.product_eye_img a,
 	.product_myopia_img a{
 		display: block;
+	}
+	.product_glasses_list li{
+		width: 60%;
+		display: inline-block;
+		float: none;
 	}
 }
 
