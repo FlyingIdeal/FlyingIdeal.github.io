@@ -1,0 +1,179 @@
+﻿@charset "utf-8";
+
+.wid1200{ 
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+.topNav{
+	width: 100%; 
+	font-size: 0px;
+	background: #3A8FFF;
+}
+
+.topNav li{ 
+	cursor: pointer;
+	display: inline-block; 
+	vertical-align: top;
+	height: 45px; 
+	line-height: 45px; 
+	margin-right: 60px;
+	color:#FFF; 
+	font-size: 16px;
+}
+
+.center {
+	padding: 20px 0 40px;
+	font-size: 0px;
+}
+
+.leftbar{ 
+	width: 800px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.swiper-container {
+	width: 800px;
+	height: 375px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 800px;
+	height: 375px;
+}
+
+.demo { 
+	background: #FFFFFF; 
+	border: 1px solid #E8EAEC; 
+	padding: 20px; 
+	overflow: hidden; 
+	margin-top: 30px;
+	position: relative;
+	transition:all .2s ease-in-out;
+}
+
+.demo:hover{
+	box-shadow:0 1px 6px rgba(0,0,0,.2);
+	border-color:#eee
+}
+
+.demo h1 { 
+	font-size: 24px; 
+	color: #29B4F0; 
+	height: 40px; 
+	line-height: 40px;
+}
+
+.demo .write {
+	font-size: 12px; 
+	color: #ccc; 
+	height: 20px; 
+	line-height: 20px; 
+	margin: 20px 0 10px 0; 
+	border-bottom: 1px dashed #ddd;
+}
+
+.demo .write span { 
+	margin-right: 12px;
+}
+
+.demo p {
+	font-size: 16px; 
+	line-height: 30px; 
+	color: #404040; 
+	margin-bottom: 20px;
+}
+
+.demo .qrcode {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.3);
+	text-align: center;
+}
+
+.demo:hover .qrcode {
+	display: flex;
+}
+
+.qrcode img {
+	width: 180px;
+	height: 180px;
+	border-radius: 4px
+}
+
+.demo a.more{
+	background: #008fb5; 
+	color: #fff; 
+	padding: 5px 10px; 
+	line-height: 18px; 
+	border-radius: 3px;
+	font-size: 12px;
+	text-decoration: none;
+	float: right;
+}
+
+.sidebar{
+	margin-left: 50px;
+ 	width: 350px;
+ 	display: inline-block;
+ 	float: right;
+}
+
+
+.hot {
+	background: #F7F7F7; 
+	box-shadow: 0 0 5px #F7F7F7;
+}
+
+.hot h2 {
+	background: #FFFFFF; 
+	line-height: 20px; 
+	padding: 10px; 
+	font-size: 16px; 
+	color: #DC591B; 
+	font-weight: normal;
+}
+
+.hot ul {
+	padding: 8px 18px 9px; 
+	padding: 8px 18px; 
+}
+
+.hot li {
+	line-height: 30px; 
+	font-size: 12px; 
+	color: #656565; 
+	padding: 5px 0px; 
+	overflow: hidden; 
+	border-bottom: 1px dashed #E2E4E5;
+}
+
+.hot li a {
+	color: #656565;
+	text-decoration: none;
+}
+
+.hot li a:hover {
+	color: #DE2D48;
+}
+
+/*footer*/
+.footer{
+	background: #36363d; 
+	border-top: 1px solid #aaa; 
+	padding: 20px 0px; 
+	text-align: center; 
+	color: #aaa;
+	font-size: 12px;
+}
