@@ -1,0 +1,528 @@
+﻿@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+html{color:#333333;overflow:auto;overflow:-moz-scrollbars-vertical ; font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}
+body,button,input,select,textarea{font-size:12px; font-family:'方正兰亭细黑简体','微软雅黑','Microsoft Yahei', Helvetica, arial,'Hiragino Sans GB', '宋体', Tahoma, Arial, STHeiti;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight: normal;}
+em{font-style:normal}
+small{font-size:12px}
+ul,ol{list-style:none}
+a{text-decoration:none;outline:none;-webkit-tap-highlight-color:rgba(255,255,255,0);}
+a:hover{text-decoration:none;}
+legend{color:#000}
+fieldset,img{border:0}
+button,input,select,textarea{font-size:100%; border:none 0; outline:none;}
+table{border-collapse:collapse;border-spacing:0}
+img{-ms-interpolation-mode:bicubic; vertical-align:top; border:0; pointer-events: none; -webkit-user-select: none; -moz-user-select: none;}
+textarea{resize:vertical; resize:none;}
+input:focus,textarea:focus{ outline:none;}
+input:-moz-placeholder , textarea:-moz-placeholder , select:-moz-placeholder{ color:#666666;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder , select:-ms-input-placeholder{ color:#666666;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder , select::-webkit-input-placeholder{ color:#666666;}
+/*清除浮动*/
+.clearfix{zoom:1}
+.clearfix:after{content:"";display:block;clear:both}
+.clear{ clear:both;}
+body{ background: #000;}
+
+img{
+	position: absolute;
+}
+.main{
+	width: 640px;
+	margin: 0 auto;
+	height: 1136px;
+	position: relative;
+	overflow: hidden;
+}
+.logo{
+	position: fixed;
+	left: 30px;
+	top: 30px;
+	z-index: 11;
+}
+.road{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: url('../images/road.jpg') center top repeat-y;
+}
+.car{
+	position: absolute;
+	left: 355px;
+	top: 520px;
+	z-index: 1;
+	width: 190px;
+	height: 430px;
+	background: url(../images/car.png) center top no-repeat;
+	-webkit-transform-origin:center center;
+}
+
+/*车线*/
+.carLine{
+	position: absolute;
+	left: 0px;
+	top: 568px;
+	width: 100%;
+	text-align: center;
+	z-index: 14;
+	display: none;
+}
+.carLineText{
+	position: absolute;
+	left: 0px;
+	top: 300px;
+	z-index: 12;
+    display: none;
+}
+.carLingBg{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 1136px;
+	z-index: 11;
+}
+.homeBg_Text{
+    left: 0px;
+    top: 300px;
+    z-index: 13;
+}
+
+@-webkit-keyframes lineShadowUp{
+	0%{-webkit-transform: translate3d(-140px, -4px, 0px) rotate(0deg); opacity: 1;}
+	25%{-webkit-transform: translate3d(-100px, -5px, 0px) rotate(0deg);}
+	50%{-webkit-transform: translate3d(-60px, -5px, 0px) rotate(0deg);}
+	75%{-webkit-transform: translate3d(20px, 5px, 0px) rotate(17deg);}
+	100%{-webkit-transform: translate3d(80px, 30px, 0px) rotate(30deg); opacity: 0.5;}
+}
+.lineShadowUp{
+	position: absolute;
+	left: 215px;
+	top: 580px;
+	z-index: 14;
+	opacity: 0;
+}
+.lineShadowUp.active{
+	-webkit-animation: lineShadowUp 0.8s linear 1 1s;
+	-moz-animation: lineShadowUp 0.8s linear 1 1s;
+	-o-animation: lineShadowUp 0.8s linear 1 1s;
+	animation: lineShadowUp 0.8s linear 1 1s;
+	-ms-animation: lineShadowUp 0.8s linear 1 1s;
+}
+
+@-webkit-keyframes lineShadowDown{
+	0%{-webkit-transform: translate3d(-140px, 0px, 0px); opacity: 1;}
+	100%{-webkit-transform: translate3d(0px, 0px, 0px); opacity: 0.5;}
+}
+.lineShadowDown{
+	position: absolute;
+	left: 275px;
+	top: 640px;
+	z-index: 14;
+	opacity: 0;
+}
+.lineShadowDown.active{
+	-webkit-animation: lineShadowDown 0.8s linear 1 1s;
+	-moz-animation: lineShadowDown 0.8s linear 1 1s;
+	-o-animation: lineShadowDown 0.8s linear 1 1s;
+	animation: lineShadowDown 0.8s linear 1 1s;
+	-ms-animation: lineShadowDown 0.8s linear 1 1s;
+}
+
+.touchDown{
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	width: 30px;
+	height: 200px;
+	margin-left:-15px;
+	background: rgba(255,255,255,0.5);
+	border-radius: 12px;
+	z-index: 15;
+	overflow: hidden;
+	display: none;
+}
+@-webkit-keyframes touchDownImg{
+	0%{-webkit-transform: translate3d(0px, 0px, 0px);}
+	100%{-webkit-transform: translate3d(0px, 200px, 0px);}
+}
+.touchDown img{
+	bottom: 0px;
+	left: 0px;
+	-webkit-animation: touchDownImg 1s linear infinite;
+	-moz-animation: touchDownImg 1s linear infinite;
+	-o-animation: touchDownImg 1s linear infinite;
+	animation: touchDownImg 1s linear infinite;
+	-ms-animation: touchDownImg 1s linear infinite;
+}
+
+/*led*/
+.led-light{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	width: 640px;
+	height: 640px;
+	z-index: 2;
+}
+.led-comeCrossCar{
+	left: 0px;
+	top:0px;
+	z-index: 2;
+}
+.led-lightInfro{
+	left: 0px;
+	top: 50px;
+	z-index: 3;
+}
+.led-shadow{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background:#000;
+}
+.led-road{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 640px;
+	height: 4000px;
+	background: url(../images/road.jpg) center top repeat-y;
+}
+
+/*动物  夜视辅助功能*/
+.camera-Infro{
+	left: 0px;
+	top: 50px;
+	z-index: 3;
+}
+.camera-shortlight{
+	position: absolute;
+	right: -7px;
+	top: -40px;
+	opacity: 0.4;
+	z-index: 3;
+}
+.animal{
+	top: 230px;
+	right: 130px;
+}
+.animal-shadow{
+	right: 0px;
+	top: 0px;
+}
+
+/*天窗*/
+.skyLight-skylightInfro{
+	left: 0px;
+	top: 50px;
+	z-index: 3;
+}
+
+/*carShadow*/
+.drive-carShadow{
+	left: 195px;
+	top: 465px;
+	position: absolute;
+	width: 500px;
+	height: 620px;
+}
+.drive-BackCrossCar{
+	left: 80px;
+	top: 1136px;
+}
+.drive-infro{
+	left: 0px;
+	top: 50px;
+	z-index: 3;
+}
+.keep-Infro{
+	left: 0px;
+	top: 50px;
+	z-index: 3;
+}
+
+@-webkit-keyframes flashOpacity{
+	0%,100%{opacity: 0.6}
+	50%{opacity: 1}
+}
+.roadLine{
+	position: absolute;
+	left: 315px;
+	top: 0px;
+	width: 21px;
+	height: 1000px;
+	background: url(../images/roadLine.jpg) center top repeat-y;
+
+	-webkit-animation: flashOpacity 1s linear infinite;
+	-moz-animation: flashOpacity 1s linear infinite;
+	-o-animation: flashOpacity 1s linear infinite;
+	animation: flashOpacity 1s linear infinite;
+	-ms-animation: flashOpacity 1s linear infinite;
+}
+.shichengBtn{
+	position: fixed;
+	left: 10px;
+	top: 50%;
+	margin-top: -90px;
+	z-index: 999999;
+	width: 46px;
+	height: 185px;
+	display: none;
+}
+/*智能驾驶*/
+.turn-frontInduction{
+	position: absolute;
+	left: 120px;
+	top: 180px;
+	width: 640px;
+	height: 380px;
+	background: url(../images/frontInduction.png) center top no-repeat;
+}
+.turn-leftCar{
+	left: -250px;
+	top: 95px;
+	-webkit-transform:rotate(90deg) scale(0.7);
+}
+.turn-RightCar{
+	right: -250px;
+	top: -50px;
+	-webkit-transform:rotate(-90deg) scale(0.7);
+}
+.turn-infro{
+	left: 0px;
+	top: 50px;
+	z-index: 3;	
+}
+.turn-road{
+	background: url(../images/turnRoad.jpg) center bottom repeat-y;
+	height: 2724px;
+	position: absolute;
+    left: 0px;
+    top: -2724px;
+    width: 640px;
+}
+.drive-road{
+	height: 2200px;
+}
+.turn-front-car{
+	right: 150px;
+    top: -80px;
+}
+.camera-light{
+	right: -30px;
+	top: 145px;
+	z-index: 3;
+	opacity: 0.6;
+}
+/*转弯*/
+.front-car{
+	position: absolute;
+	right: 150px;
+	top:-80px;
+	-webkit-transform:rotate(-20deg);
+	-webkit-transform-origin:center center;
+}
+.round-shadow{
+	position: absolute;
+	left: 125px;
+	top: 235px;
+	z-index: 2;
+	width: 640px;
+	height: 380px;
+	background: url(../images/frontInduction.png);
+	-webkit-transform:scale(0.6);
+}
+.round-infro{
+	left: 0px;
+	top: 50px;
+	z-index: 3;
+}
+.round-road{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 1280px;
+	height: 3000px;
+	background: url(../images/round-road-2.jpg) no-repeat;
+	-webkit-transform-origin:right bottom;
+}
+.driveBtn{
+	position: absolute;
+	left: 208px;
+	top: 200px;
+	width: 224px;
+	height: 61px;
+	z-index:3;
+
+	-webkit-animation: flashOpacity 1s linear infinite;
+	-moz-animation: flashOpacity 1s linear infinite;
+	-o-animation: flashOpacity 1s linear infinite;
+	animation: flashOpacity 1s linear infinite;
+	-ms-animation: flashOpacity 1s linear infinite;
+}
+
+@-webkit-keyframes SlideDown{
+	0%{-webkit-transform: translate3d(0px, 0px, 0px); opacity: 0;}
+	100%{-webkit-transform: translate3d(0px, 20px, 0px); opacity: 0.8}
+}
+.downtips{
+	display: none;
+	position: fixed;
+	right: 50%;
+	bottom: 30px;
+	z-index: 999999;
+	margin-left: -15px;
+	-webkit-animation: SlideDown 1.5s linear infinite;
+	-moz-animation: SlideDown 1.5s linear infinite;
+	-o-animation: SlideDown 1.5s linear infinite;
+	animation: SlideDown 1.5s linear infinite;
+	-ms-animation: SlideDown 1.5s linear infinite;
+}
+
+/*提交页面*/
+.subMain{
+	width: 640px;
+	height: 1136px;
+	margin: 0 auto;
+	background: url('../images/submitBg.jpg') center top no-repeat;
+	color: #fff;
+	font-family: '汉仪中宋简';
+}
+.subMain h3.title{
+	padding-top: 40px;
+	padding-left: 30px;
+	font-size: 42px;
+	height: 100px;
+	line-height: 100px;
+}
+.formBox{
+	padding-left: 30px;
+	margin-top: 10px;
+}
+.formBox li{
+	margin-bottom: 20px;
+}
+.formBox li span{
+	display: inline;
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	font-size: 22px;
+	width: 160px;
+}
+input.inputText{
+	width: 390px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	background: none;
+	color: #fff;
+	font-size: 22px;
+}
+.sex{
+	display: inline;
+	float: left;
+	width: 390px;
+}
+.sex .sexCom{
+	display: inline;
+	float: left;
+	width: 50%;
+	height: 42px;
+	line-height: 42px;
+	font-size: 22px;
+}
+.sexCom i{
+	display: inline;
+	float: left;
+	width: 20px;
+	height: 24px;
+	margin-top: 10px;
+	margin-right: 8px;
+	background: url('../images/icon.png') -20px 0 no-repeat;
+}
+.sexCom i.active{
+	background-position: 0px 0px;
+}
+.mselect{
+	display: inline;
+	float: left;
+	width: 175px;
+	position: relative;
+	background: url('../images/icon.png') 150px -22px no-repeat;
+}
+.mselect h4{
+	text-indent: 10px;
+    line-height: 42px;
+    overflow: hidden;
+    font-size: 24px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.mselect select {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 9999;
+}
+.formBox li em{
+	display: inline;
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	font-size: 24px;
+	margin:0 5px;
+}
+.agency{
+	margin-left: 160px;
+	width: 412px;
+	background-position: 395px -22px;
+}
+.agency_2{
+	width: 412px;
+	background-position: 395px -22px;
+}
+.agree{
+	padding: 0px 30px;
+}
+.agree i{
+	display: inline;
+	float: left;
+	width: 22px;
+	height: 22px;
+	background: url('../images/icon.png') -72px 0 no-repeat;
+}
+.agree i.active{
+	background-position: -50px 0;
+}
+.agree p{
+	display: inline;
+	float: left;
+	width: 538px;
+	margin-left: 20px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.submit{
+	text-align: center;
+	margin-top: 25px;
+}
+.submit a{
+	width: 110px;
+	height: 61px;
+	display: inline-block;
+	text-indent: -9999px;
+	background: url('../images/icon.png') -100px 0 no-repeat;
+}

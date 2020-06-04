@@ -1,0 +1,1057 @@
+var superList = [{ //第一层 
+		id: 1,
+		title: '展现',
+		parentId: 1
+	}, {
+		id: 2,
+		title: '点击',
+		parentId: 2
+	}, {
+		id: 3,
+		title: '浏览',
+		parentId: 3
+	}, {
+		id: 4,
+		title: '转化',
+		parentId: 4
+	}, { //第二层
+		id: 5,
+		title: '词量',
+		parentId: 1
+	}, {
+		id: 6,
+		title: '匹配',
+		parentId: 1
+	}, {
+		id: 7,
+		title: '范围',
+		parentId: 1
+	}, {
+		id: 8,
+		title: '位置',
+		parentId: 2
+	}, {
+		id: 9,
+		title: '创意',
+		parentId: 2
+	}, {
+		id: 10,
+		title: '浏览数量',
+		parentId: 3
+	}, {
+		id: 11,
+		title: '浏览质量',
+		parentId: 3
+	}, {
+		id: 12,
+		title: '数量',
+		parentId: 4
+	}, {
+		id: 13,
+		title: '质量',
+		parentId: 4
+	}, { //第三层
+		id: 15,
+		title: '词数量',
+		parentId: 5
+	}, {
+		id: 16,
+		title: '词质量',
+		parentId: 5
+	}, {
+		id: 17,
+		title: '匹配方式',
+		parentId: 6
+	}, {
+		id: 18,
+		title: '匹配质量',
+		parentId: 6
+	}, {
+		id: 19,
+		title: '地域',
+		parentId: 7
+	}, {
+		id: 20,
+		title: '时长',
+		parentId: 7
+	}, {
+		id: 21,
+		title: '频道',
+		parentId: 7
+	}, {
+		id: 22,
+		title: '左侧首屏展现率',
+		parentId: 8
+	}, {
+		id: 23,
+		title: '排名',
+		parentId: 8
+	}, {
+		id: 24,
+		title: '创意内容与搜索词的相关性',
+		parentId: 9
+	}, {
+		id: 25,
+		title: '样式',
+		parentId: 9
+	}, {
+		id: 26,
+		title: '网站到达率',
+		parentId: 10
+	}, {
+		id: 27,
+		title: '网站打开速度',
+		parentId: 10
+	}, {
+		id: 28,
+		title: '网站PV/UV',
+		parentId: 10
+	}, {
+		id: 29,
+		title: '网站吸引力',
+		parentId: 11
+	}, {
+		id: 30,
+		title: '网站内容',
+		parentId: 11
+	}, {
+		id: 31,
+		title: '咨询量',
+		parentId: 12
+	}, {
+		id: 32,
+		title: '成单量',
+		parentId: 12
+	}, {
+		id: 33,
+		title: '提高产出',
+		parentId: 13
+	}, {
+		id: 34,
+		title: '减少不必要的花费',
+		parentId: 13
+	}, {
+		id: 35,
+		title: '有消费词数量',
+		parentId: 16
+	}, {
+		id: 36,
+		title: '有消费率',
+		parentId: 16
+	}, {
+		id: 37,
+		title: '投放地域',
+		parentId: 19
+	}, {
+		id: 38,
+		title: '预算',
+		parentId: 20
+	}, {
+		id: 39,
+		title: '撞线',
+		parentId: 20
+	}, {
+		id: 40,
+		title: '时段',
+		parentId: 20
+	}, {
+		id: 41,
+		title: 'PC',
+		parentId: 21
+	}, {
+		id: 42,
+		title: '无线',
+		parentId: 21
+	}, {
+		id: 43,
+		title: '搜索合作网络',
+		parentId: 21
+	}, {
+		id: 44,
+		title: '已展现未点击关键词的展现区域',
+		parentId: 22
+	}, {
+		id: 45,
+		title: '重点词展现区域',
+		parentId: 22
+	}, {
+		id: 46,
+		title: '质量度',
+		parentId: 23
+	}, {
+		id: 47,
+		title: '出价',
+		parentId: 23
+	}, {
+		id: 48,
+		title: '文字创意飘红',
+		parentId: 25
+	}, {
+		id: 49,
+		title: 'PC端特殊样式',
+		parentId: 25
+	}, {
+		id: 50,
+		title: '无线端特殊样式',
+		parentId: 25
+	}, {
+		id: 51,
+		title: '综合型特殊样式',
+		parentId: 25
+	}, {
+		id: 52,
+		title: '平均访问页数',
+		parentId: 29
+	}, {
+		id: 53,
+		title: '平均访问时长',
+		parentId: 29
+	}, {
+		id: 54,
+		title: '跳出率',
+		parentId: 29
+	}, {
+		id: 55,
+		title: '网站联通页是否对应了相关产品',
+		parentId: 30
+	}, {
+		id: 56,
+		title: '网站提供的信息与创意描述是否相符',
+		parentId: 30
+	}, {
+		id: 57,
+		title: '网站是否激发用户购买欲',
+		parentId: 30
+	}, {
+		id: 58,
+		title: '网站是否提供在线沟通工具或留言方式',
+		parentId: 30
+	}, {
+		id: 59,
+		title: '商桥沟通次数',
+		parentId: 31
+	}, {
+		id: 60,
+		title: '留言次数',
+		parentId: 31
+	}, {
+		id: 61,
+		title: '电话沟通次数',
+		parentId: 31
+	}, {
+		id: 62,
+		title: '离线宝回呼次数',
+		parentId: 31
+	}, {
+		id: 63,
+		title: '线上订单量',
+		parentId: 32
+	}, {
+		id: 64,
+		title: '线下订单量',
+		parentId: 32
+	}, {
+		id: 65,
+		title: 'APP下载量',
+		parentId: 32
+	}, {
+		id: 66,
+		title: '争取高转化流量',
+		parentId: 33
+	}, {
+		id: 67,
+		title: '争取高转化访客',
+		parentId: 33
+	}, {
+		id: 68,
+		title: 'IP排除',
+		parentId: 34
+	}, {
+		id: 69,
+		title: '主动返款',
+		parentId: 34
+	}
+
+]
+
+
+
+
+
+
+var appList = [{
+	moreId: 1,
+	parentId: 15,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_7466.html',
+	appIcon: 'baiduAppIcon',
+	title: '关键词工具',
+	starOnNum: 1,
+	starLoseNum: 4,
+	infro: '关键词工具是根据您的各种需要，帮您寻找、助您选择关键词，从而更好地定位潜在客户的有力助手。它就像是一个好用的渔网，帮您从茫茫词海中打捞出合适您的关键词。',
+	belong: 'cishuliang'
+}, {
+	moreId: 1,
+	parentId: 15,
+	aLink: 'http://yingxiao.baidu.com/product/fc/22.html?castk=5283fwt72e5e012d7d677',
+	appIcon: 'baiduAppIcon',
+	title: '搜索词报告',
+	starOnNum: 2,
+	starLoseNum: 3,
+	infro: '可以查看网民通过哪些搜索词访问了您的哪个推广结果。您可以将转化效果较好的搜索词添加为关键词，来为您定位更多的潜在客户。',
+	belong: 'cishuliang'
+}, {
+	moreId: 1,
+	parentId: 15,
+	aLink: 'http://yingxiao.baidu.com/fc/?action=downloadMaterial&nodeid=10589',
+	appIcon: 'baiduAppIcon',
+	title: '智优添好词',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '快捷工具，帮助快捷添加好词。',
+	belong: 'cishuliang'
+},  {
+	moreId: 1,
+	parentId: 15,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: '工具中心-提词规划师',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '未全流量。',
+	belong: 'cishuliang'
+}, {
+	moreId: 1,
+	parentId: 35,
+	aLink: 'http://yingxiao.baidu.com/product/fc/21.html?castk=ddfa2sg7ee24f907ed518',
+	appIcon: 'baiduAppIcon',
+	title: '数据报告-关键词报告',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '查看关键词级别的数据报告，用途：分析账户关键词质量。',
+	belong: 'cizhiliang'
+}, {
+	moreId: 1,
+	parentId: 35,
+	aLink: 'http://yingxiao.baidu.com/support/fc/detail_9208.html',
+	appIcon: 'baiduAppIcon',
+	title: '关键词工具-自动分组',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '关键词工具增加自动分组新功能。您可以通过系统建议，将关键词分到多个计划单元中。',
+	belong: 'cizhiliang'
+}, {
+	moreId: 1,
+	parentId: 36,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_405.html',
+	appIcon: 'baiduAppIcon',
+	title: '关键词列表',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '在关键词列表页中可以了解到关键词质量度、展现、点击、消费信息，并可以对关键词进行新建、编辑、删除、暂停等操作。',
+	belong: 'cizhiliang',
+}, {
+	moreId: 2,
+	parentId: 17,
+	aLink: 'http://yingxiao.baidu.com/product/fc/71.html?castk=ed441sl73497d67fed851',
+	appIcon: 'baiduAppIcon',
+	title: '高级短语2.0',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '全新的高级短语2.0在短语匹配中创造性的为您提供了三种匹配选择，您能够通过这三种方式精准控制关键词流量。这三种新的匹配选择分别是：核心包含、同义包含、精确包含',
+	belong: 'pipeifangshi'
+}, {
+	moreId: 2,
+	parentId: 18,
+	aLink: 'http://yingxiao.baidu.com/product/fc/88.html?castk=3e89fjp73b4ec07c4d921',
+	appIcon: 'baiduAppIcon',
+	title: '分匹配模式出价',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '可在同一单元中，对同一个关键词，根据匹配模式出不同的出价。',
+	belong: 'pipeizhiliang'
+}, {
+	moreId: 3,
+	parentId: 37,
+	aLink: 'http://yingxiao.baidu.com/support/fc/detail_611.html',
+	appIcon: 'baiduAppIcon',
+	title: '地市级推广',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度凤巢后台支持对全国地市级设置推广地域的操作。',
+	belong: 'pipeidiyu'
+}, {
+	moreId: 3,
+	parentId: 37,
+	aLink: 'http://yingxiao.baidu.com/product/fc/21.html?castk=8f68egu77ed0cbb32d540',
+	appIcon: 'baiduAppIcon',
+	title: '数据报告-分地域报告',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '可查看来自各地域的点击量、消费、平均点击价格、展现量、点击量、转化等数据，可以结合各地域推广的效果，及时调整推广方案。',
+	belong: 'pipeidiyu'
+}, {
+	moreId: 3,
+	parentId: 37,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/node_2504.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-访客地域',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度统计自带的访客维度数据报告：地域分布提供了各个地域给您网站带来的流量数据，这些数据可以帮助您合理地分配各地域的推广预算和有针对性地制定业务推广策略。',
+	belong: ''
+}, {
+	moreId: 3,
+	parentId: 37,
+	aLink: 'http://yingxiao.baidu.com/product/fc/28.html?castk=b15d7qp78fc57b526d563',
+	appIcon: 'baiduAppIcon',
+	title: '市场风向标',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '市场风向标是百度推出的帮助您了解行业趋势的市场分析工具。通过市场风向标，您可以了解到所在行业在全国各地区的检索量，了解自己的左侧推广展现在行业中处于什么水平，知道检索高峰时段和热门关键词，从而把握行业情况以及自身在行业中的定位，进而使推广投放更加精准。',
+	belong: 'pipeidiyu'
+}, {
+	moreId: 3,
+	parentId: 37,
+	aLink: 'http://yingxiao.baidu.com/fc/wordlist_1_STU.html#word_450',
+	appIcon: 'baiduAppIcon',
+	title: '搜索意图定位',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '推广地域设置中的附带功能，功能启用后，当网民的搜索词中可识别的地域词与您所设置的推广地域一致时也可能会展现您的推广内容，账户层级启用后计划层级即可进行设置。',
+	belong: 'pipeidiyu'
+}, {
+	moreId: 3,
+	parentId: 38,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_475.html',
+	appIcon: 'baiduAppIcon',
+	title: '账户预算',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '您可以为搜索推广账户设置每日预算，或者为不同推广计划分配不同的预算，管控更加灵活科学。',
+	belong: 'pipeishichang'
+}, {
+	moreId: 3,
+	parentId: 38,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_8661.html',
+	appIcon: 'baiduAppIcon',
+	title: '周预算',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '周预算是您每周愿意支付的最高推广费用，百度会根据流量变化，智能地将预算分配到本周每一天，保证您的推广每天都能获得网民青睐。',
+	belong: 'pipeishichang'
+}, {
+	moreId: 3,
+	parentId: 39,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_10764.html',
+	appIcon: 'baiduAppIcon',
+	title: '手机版凤巢-手机充值功能',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '北京、上海、广州、深圳、东莞的客户可通过手机版凤巢完成账户充值操作。',
+	belong: 'pipeishichang'
+}, {
+	moreId: 3,
+	parentId: 39,
+	aLink: 'http://yingxiao.baidu.com/topic/291/help.pdf',
+	appIcon: 'baiduAppIcon',
+	title: '增量预算',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '为减少或消除因预算不足、调整不及时导致的撞线引起的流量损失，在预算外，独立设置的日预算。该日预算会根据设置的启用时间，在预算撞线时无缝再上线。',
+	belong: 'pipeishichang'
+}, {
+	moreId: 3,
+	parentId: 40,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_481.html',
+	appIcon: 'tuiguangIcon',
+	title: '推广时段设置',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '推广时段管理可以帮助您根据业务特点，灵活控制投放时间。但要注意根据具体情况科学使用，因为放弃在某些时段进行推广，就意味着放弃了一部分商机，白白错失部分机会。让给竞争对手更多的机会。',
+	belong: 'pipeishichang'
+}, {
+	moreId: 3,
+	parentId: 41,
+	aLink: 'http://yingxiao.baidu.com/fc/detail_582.html',
+	appIcon: 'baiduAppIcon',
+	title: '关键词最低展现价格',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '关键词的最低展现价格是由关键词的质量度和商业价值共同决定的。您看到的最低展现价格较高，可能意味着该关键词的商业价值更高（更能为您捕捉有意向的、高价值的潜在客户），也可能是由该关键词的质量度较低引起。另外估算工具中的搜索无效也是出价低于最低展现价格引起的。',
+	belong: 'pipeipindao'
+}, {
+	moreId: 3,
+	parentId: 42,
+	aLink: 'http://yingxiao.baidu.com/fc/detail_11782.html',
+	appIcon: 'baiduAppIcon',
+	title: '无线出价系数',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '移动出价比例是指对您的关键词出价设置一个参数，关键词出价乘以该参数以后的值，将会作为投放在移动设备上的出价。',
+	belong: 'pipeipindao'
+}, {
+	moreId: 3,
+	parentId: 42,
+	aLink: 'http://yingxiao.baidu.com/topic/247/index.html',
+	appIcon: 'baiduAppIcon',
+	title: '移动站质量度（LPQ）',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '是指Landing Page的质量度，会影响页面的到达率，对用户体验有所影响，最终影响客户的转化率。页面大小、页面内容、页面样式、转化渠道等因素会影响移动站点质量度，加载速度快、内容丰富的页面移动站点质量度星级更高，提升页面移动站点质量度可以增强用户体验和转化效果。',
+	belong: 'pipeipindao'
+}, {
+	moreId: 3,
+	parentId: 43,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: '搜索合作网络出价系数',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '未全流量',
+	belong: 'pipeipindao'
+}, {
+	moreId: 4,
+	parentId: 44,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: '智优-看排名-分位次数据',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '未全流量',
+	belong: 'zhanxianlv'
+}, {
+	moreId: 4,
+	parentId: 45,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_518.html',
+	appIcon: 'baiduAppIcon',
+	title: '账户优化工具',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '账户优化是百度为推广商户开发的用于提升账户质量的一款工具，通过对账户余额、预算、质量度、出价和排名、在线时间、关键词数量、关键词和创意状态的分析，指出客户账户的优化方向和该方向上的优化潜力，在给予合适优化建议的同时，帮助和引导客户进行优化操作，提升推广效果。',
+	belong: 'zhanxianlv'
+}, {
+	parentId: 46,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: '智优-质量度优化包',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '',
+	belong: 'yxpaiming'
+}, {
+	parentId: 47,
+	aLink: 'http://yingxiao.baidu.com/product/fc/94.html?castk=ad8f6of7d85674f33d257',
+	appIcon: 'baiduAppIcon',
+	title: '排名倾向自动出价',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度官方首次发布智能出价工具，可帮助客户提高无线上方，PC左侧前三展现几率。',
+	belong: 'yxpaiming'
+}, {
+	parentId: 47,
+	aLink: 'http://yingxiao.baidu.com/fc/detail_715.html',
+	appIcon: 'tuiguangIcon',
+	title: '推广实况',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '可以利用推广实况工具，方便地查看任一搜索词在某一地域的推广展现情况。输入您希望查看的关键词（不限于您已推广的关键词），选择地域（全国各直辖市/省份，不限于您当前的的推广地域），就可以以页面预览的形式看到该搜索词在该地域的推广展现情况。',
+	belong: 'yxpaiming'
+}, {
+	parentId: 47,
+	aLink: 'javascript:void(0);',
+	appIcon: 'baiduAppIcon',
+	title: '智优-降成本',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '',
+	belong: 'yxpaiming'
+}, {
+	parentId: 47,
+	aLink: 'http://yingxiao.baidu.com/product/fc/57.html?castk=c4133yj7f23d39a3bd387',
+	appIcon: 'baiduAppIcon',
+	title: '高级工具-方案实验工具',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '方案实验工具是支持客户在同一时段分流量测试推广方案效果的工具，目前方案实验工具支持不同出价方案的实验。',
+	belong: 'yxpaiming'
+}, {
+	moreId: 5,
+	parentId: 24,
+	aLink: 'http://yingxiao.baidu.com/product/fc/83.html?castk=cbad5ml7ae086b334d750',
+	appIcon: 'baiduAppIcon',
+	title: '动态创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '动态创意是根据网盟搜索和背景的分析判断网民的需求，动态的从客户网站中抓取网民需要的信息并呈现给他，做到更精准的投放。',
+	belong: 'chuangyinr'
+}, {
+	moreId: 5,
+	parentId: 48,
+	aLink: 'http://yingxiao.baidu.com/fc/detail_749.html',
+	appIcon: 'baiduAppIcon',
+	title: '通配符',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '通配符可以帮助您在创意中插入关键词。插入通配符的创意在展现时，将以触发的关键词替代通配符标志。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 49,
+	aLink: 'http://yingxiao.baidu.com/topic/340/index.html',
+	appIcon: 'tuiguangIcon',
+	title: '凤巢视频-搜索推广',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '在百度搜索结果凤巢图文样式中增加视频播放，点击广告在客户网站上出现弹层展现客户视频。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 49,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: '附加口碑创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 49,
+	aLink: 'http://yingxiao.baidu.com/product/fc/91.html?castk=181f8fk763428ea1ed152',
+	appIcon: 'baiduAppIcon',
+	title: '附加微博创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '凤巢后台高级样式中绑定新浪企业蓝V账号，根据网民搜索提图有机会在PC搜索结果页展现企业微博信息——有利于企业自媒体能力展现。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 49,
+	aLink: 'http://yingxiao.baidu.com/product/fc/95.html?preview=1',
+	appIcon: 'baiduAppIcon',
+	title: '附加第三方创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '在凤巢后台高级样式中添加新闻报道、名人评价、专利技术，获奖信息的第三方评价信息，根据网民搜索意图有机会在PC搜索结果页展现——可以提高个性化创意展现。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 50,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: 'LBS无线地图',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '未全流量。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 8,
+	parentId: 64,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: 'LBS无线地图',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '未全流量。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 50,
+	aLink: '#',
+	appIcon: 'baiduAppIcon',
+	title: '黄金展位',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 50,
+	aLink: 'http://yingxiao.baidu.com/product/fc/49.html',
+	appIcon: 'baiduAppIcon',
+	title: '直航样式',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '在无线搜索结果页上直接展现电话号码按钮，点击播出，快速沟通。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 50,
+	aLink: 'http://yingxiao.baidu.com/product/fc/43.html?castk=d020eui7aecd2b79cd010',
+	appIcon: 'baiduAppIcon',
+	title: 'APP下载',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '在无线搜搜结果也上新增APP下载按钮，应用详情，应用图标等元素，为广大客户提供一种全新的APP分发方式。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 51,
+	aLink: 'http://yingxiao.baidu.com/product/fc/84.html?castk=3871bqh70793af78fd841',
+	appIcon: 'baiduAppIcon',
+	title: '凤巢图文',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '凤巢图文是百度搜索推广展现样式的重要组成部分，是企业迅速提升重点推广单元、核心推广计划高质点击的高级样式。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 51,
+	aLink: 'http://yingxiao.baidu.com/product/fc/87.html?castk=34917nf7ff5d7d83ed903',
+	appIcon: 'baiduAppIcon',
+	title: '附加优惠创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '凤巢后台高级样式中添加优惠信息，根据网民搜索提图有机会在PC\无线搜索结果页展现优惠信息——有利于缩短转化路径，提高到店成单。',
+	belong: 'chuangyiys'
+}, {
+	parentId: 64,
+	aLink: 'http://yingxiao.baidu.com/product/fc/87.html?castk=34917nf7ff5d7d83ed903',
+	appIcon: 'baiduAppIcon',
+	title: '附加优惠创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '凤巢后台高级样式中添加优惠信息，根据网民搜索提图有机会在PC\无线搜索结果页展现优惠信息——有利于缩短转化路径，提高到店成单。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 51,
+	aLink: 'http://yingxiao.baidu.com/product/fc/83.html?castk=865d5xn7a2d8c488ed483',
+	appIcon: 'baiduAppIcon',
+	title: '动态创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '动态创意是根据网盟搜索和背景的分析判断网民的需求，动态的从客户网站中抓取网民需要的信息并呈现给他，做到更精准的投放。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 5,
+	parentId: 51,
+	aLink: 'http://yingxiao.baidu.com/product/fc/52.html?castk=afc36wq7b1ab69390d620',
+	appIcon: 'baiduAppIcon',
+	title: '闪投（列表\导航）',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '将客户推广核心内容前置到结果页展现，缩短决策时间提高转化。',
+	belong: 'chuangyiys'
+}, {
+	moreId: 6,
+	parentId: 26,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/node_2501.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度统计提供各种维度的访客行为分析报告，这些报告可以帮助您全方面改善网站质量与推广方案——到达率=访问次数/点击次数（百度统计可以提供该数据）。',
+	belong: 'wzddl'
+}, {
+	parentId: 61,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/node_2501.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度统计提供各种维度的访客行为分析报告，这些报告可以帮助您全方面改善网站质量与推广方案——到达率=访问次数/点击次数（百度统计可以提供该数据）。',
+	belong: 'wzddl'
+}, {
+	moreId: 6,
+	parentId: 27,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/detail_8550.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-网站速度诊断',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '提高网页/网站的打开速度，是网站建设的第一要务。为了帮助客户更好的了解网站加载速度现状，百度统计推出了“网站速度诊断”功能。当客户发现网站速度打开较慢时，可以快速定位原因，并提出优化建议，帮助客户及时予以改进。',
+	belong: 'wzdksd'
+}, {
+	moreId: 6,
+	parentId: 28,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/detail_4133.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-推广概况',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '“点击量”和“浏览量”具有显著的区别：点击量是指推广被访客点击的次数，由于点击发生在搜索结果页，因此由百度推广平台记录；浏览量是指访客进入您的网站后浏览的页面数量，如果一个页面被访问多次，或访客浏览了多个页面，浏览量会多次累计。',
+	belong: 'wzpvuv'
+}, {
+	moreId: 7,
+	parentId: 52,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/node_2505.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-页面分析报告',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '可以了解访客在您网站上最关注的内容，并根据这些内容，及时地更新或调整页面信息与布局，以促进访客尽快地转化成为您的客户。',
+	belong: 'wzxyl'
+}, {
+	moreId: 7,
+	parentId: 56,
+	aLink: 'http://yingxiao.baidu.com/product/fc/21.html?castk=b6789uu78b310e208d052',
+	appIcon: 'baiduAppIcon',
+	title: '数据报告-创意报告',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '可通过创意点击率了解网民需求与创意描述是否相符。',
+	belong: 'wzneirong'
+}, {
+	moreId: 7,
+	parentId: 54,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/detail_2600.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-跳出率',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '“跳出率”很高说明有大量的访客在进入您的网站后看了第一个页面便离开了您的网站。',
+	belong: 'wzneirong'
+}, {
+	moreId: 7,
+	parentId: 56,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/detail_2600.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-跳出率',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '“跳出率”很高说明有大量的访客在进入您的网站后看了第一个页面便离开了您的网站。',
+	belong: 'wzneirong'
+}, {
+	moreId: 7,
+	parentId: 53,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/detail_2601.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-平均访问时长',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '“平均停留时长”很短表示访客进入您的网站后没有停留多久就离开了。',
+	belong: 'wzneirong'
+}, {
+	moreId: 7,
+	parentId: 57,
+	aLink: 'http://yingxiao.baidu.com/product/fc/87.html?castk=34917nf7ff5d7d83ed903',
+	appIcon: 'baiduAppIcon',
+	title: '附加优惠创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '凤巢后台高级样式中添加优惠信息，根据网民搜索提图有机会在PC\无线搜索结果页展现优惠信息——有利于缩短转化路径，提高到店成单。',
+	belong: 'wzneirong'
+}, {
+	moreId: 7,
+	parentId: 58,
+	aLink: 'http://yingxiao.baidu.com/product/site/qiao.html',
+	appIcon: 'shangqiaoIcon',
+	title: '百度商桥',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度商桥是百度为推广客户量身定做的、用于客户和网站访客直接在线沟通的商务沟通工具。',
+	belong: 'wzneirong'
+}, {
+	moreId: 7,
+	parentId: 58,
+	aLink: 'http://yingxiao.baidu.com/product/site/lxb.html',
+	appIcon: 'lixianbaoIcon',
+	title: '离线宝',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度离线宝集网页回呼、400增值、媒体追踪等丰富营销应用于一体，全方位提升推广电话效果！',
+	belong: 'wzneirong'
+}, {
+	moreId: 8,
+	parentId: 62,
+	aLink: 'http://yingxiao.baidu.com/product/site/lxb.html',
+	appIcon: 'lixianbaoIcon',
+	title: '离线宝',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度离线宝集网页回呼、400增值、媒体追踪等丰富营销应用于一体，全方位提升推广电话效果！',
+	belong: 'wzneirong'
+}, {
+	moreId: 8,
+	parentId: 59,
+	aLink: 'http://yingxiao.baidu.com/support/qiao/node_4461.html',
+	appIcon: 'shangqiaoIcon',
+	title: '百度商桥',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度商桥是百度为推广客户量身定做的、用于客户和网站访客直接在线沟通的商务沟通工具——其中百度商桥提供详细的沟通数据供客户使用。',
+	belong: 'zixunliang'
+}, {
+	moreId: 8,
+	parentId: 60,
+	aLink: 'http://yingxiao.baidu.com/support/qiao/node_4461.html',
+	appIcon: 'shangqiaoIcon',
+	title: '百度商桥',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度商桥是百度为推广客户量身定做的、用于客户和网站访客直接在线沟通的商务沟通工具——其中百度商桥提供详细的沟通数据供客户使用。',
+	belong: 'zixunliang'
+}, {
+	moreId: 8,
+	parentId: 59,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/?module=default&controller=index&action=detail&nodeid=2571',
+	appIcon: 'tongjiIcon',
+	title: '百度统计-转化次数',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '目前百度统计提供了三种转化设置功能帮助您定义转化目标。',
+	belong: 'zixunliang'
+}, {
+	parentId: 61,
+	aLink: 'http://yingxiao.baidu.com/product/vadd/18.html?castk=194c4qs7a9aec2cedd222',
+	appIcon: 'lixianbaoIcon',
+	title: '离线宝',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度离线宝集网页回呼、400增值、媒体追踪等丰富营销应用于一体，全方位提升推广电话效果！',
+	belong: 'zixunliang'
+}, {
+	moreId: 8,
+	parentId: 61,
+	aLink: 'http://yingxiao.baidu.com/support/fc/node_8847.html',
+	appIcon: 'baiduAppIcon',
+	title: '数据报告',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '凤巢后台数据报告中提供转化（网页）、转化（商桥）、转化（电话）数据，前提条件是需要正确安装统计代码。',
+	belong: 'zixunliang'
+}, {
+	moreId: 8,
+	parentId: 63,
+	aLink: 'http://yingxiao.baidu.com/product/fc/87.html?castk=34917nf7ff5d7d83ed903',
+	appIcon: 'baiduAppIcon',
+	title: '附加优惠创意',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '凤巢后台高级样式中添加优惠信息，根据网民搜索提图有机会在PC\无线搜索结果页展现优惠信息——有利于缩短转化路径，提高到店成单。',
+	belong: 'chengdanliang'
+}, {
+	moreId: 8,
+	parentId: 62,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/node_2501.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度统计提供各种维度的访客行为分析报告，这些报告可以帮助您全方面改善网站质量与推广方案。',
+	belong: 'chengdanliang'
+}, {
+	parentId: 63,
+	aLink: 'http://yingxiao.baidu.com/support/tongji/node_2501.html',
+	appIcon: 'tongjiIcon',
+	title: '百度统计',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '百度统计提供各种维度的访客行为分析报告，这些报告可以帮助您全方面改善网站质量与推广方案。',
+	belong: 'chengdanliang'
+}, {
+	moreId: 8,
+	parentId: 65,
+	aLink: 'http://yingxiao.baidu.com/product/fc/43.html?castk=d020eui7aecd2b79cd010',
+	appIcon: 'baiduAppIcon',
+	title: 'APP附加创意（无线）',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '在无线搜搜结果也上新增APP下载按钮，应用详情，应用图标等元素，为广大客户提供一种全新的APP分发方式。',
+	belong: 'chengdanliang'
+}, {
+	moreId: 9,
+	parentId: 66,
+	aLink: 'http://yingxiao.baidu.com/product/fc/88.html?castk=84971zg71f868bf6ed248',
+	appIcon: 'baiduAppIcon',
+	title: '分匹配模式出价',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '可在同一单元中，对同一个关键词，根据匹配模式出不同的出价。',
+	belong: 'tigaocl'
+}, {
+	moreId: 9,
+	parentId: 67,
+	aLink: 'http://yingxiao.baidu.com/product/fc/23.html',
+	appIcon: 'baiduAppIcon',
+	title: '转化出价工具',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '转化出价工具是通过设置转化目标（比如有多少人完成了注册），跟踪转化状态，帮助客户衡量自身推广转化效果的工具。',
+	belong: 'tigaocl'
+}, {
+	moreId: 9,
+	parentId: 68,
+	aLink: 'http://yingxiao.baidu.com/topic/358/index.html',
+	appIcon: 'baiduAppIcon',
+	title: '商盾-展现屏蔽',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '利用展现屏蔽功能，您可以将手动排除IP和策略命中IP排除在推广展现范围外，防御无效点击。',
+	belong: 'jianshaotr'
+}, {
+	moreId: 9,
+	parentId: 69,
+	aLink: 'http://yingxiao.baidu.com/product/fc/70.html',
+	appIcon: 'baiduAppIcon',
+	title: '商盾-高级过滤',
+	starOnNum: 3,
+	starLoseNum: 2,
+	infro: '高级过滤是针对无效点击过滤的技术革新，让百度推广客户获得更好的推广服务与推广效果。',
+	belong: 'jianshaotr'
+}]
+
+
+
+var titleVal = [{
+	titleId: 1,
+	title_cnt: '关键词是获得展现的基础，充足的数量的优质关键词，能显著提升展现和效果'
+}, {
+	titleId: 2,
+	title_cnt: '提交的关键词应该尽量保证有消费，才能确实带来展现；若提交了大量关键词但没有产生消费，也不会带来展现和效果'
+}, {
+	titleId: 3,
+	title_cnt: '匹配方式决定提交关键词有多大可能性被对应网民搜索到，对展现有极大影响。'
+}, {
+	titleId: 4,
+	title_cnt: '设置的匹配方式，是否能带来最优质的展现和流量'
+}, {
+	titleId: 5,
+	title_cnt: '推广结果展现在哪些地域'
+}, {
+	titleId: 6,
+	title_cnt: '推广结果在哪些时段展现'
+}, {
+	titleId: 7,
+	title_cnt: '推广结果展现在哪些频道'
+}, {
+	titleId: 8,
+	title_cnt: '展现在左侧的结果更有可能被点击，展现在上方的广告结果更有可能被点击'
+}, {
+	titleId: 9,
+	title_cnt: '排名靠前的关键词更容易被点击'
+}, {
+	titleId: 10,
+	title_cnt: '创意与网民搜索词相关性越强，被点击的概率越大'
+}, {
+	titleId: 11,
+	title_cnt: '特殊的样式有助于在众多创意中脱颖而出，吸引关注'
+}, {
+	titleId: 12,
+	title_cnt: '网站到达率=访问次数/点击次数，到达率越高，说明从点击到浏览环节的损耗越少'
+}, {
+	titleId: 13,
+	title_cnt: '网站打开速度与网站本身质量有关，网站打开速度越快，访客流失的可能性越低'
+}, {
+	titleId: 14,
+	title_cnt: 'PV(访问量)： 用户每浏览、刷新即被计算1PV；UV(独立访客)：一天内访问您网站的一台电脑客户端为一个UV。'
+}, {
+	titleId: 15,
+	title_cnt: '网站能否吸引访客浏览，重点内容是否足够醒目'
+}, {
+	titleId: 16,
+	title_cnt: '网站内容是否匹配访客需求，内容是否真实可信，具有价值'
+}, {
+	titleId: 17,
+	title_cnt: '到访网民通过电话、在线沟通等方式进行售前咨询的数量'
+}, {
+	titleId: 18,
+	title_cnt: '到访网民通过上述环节最终形成的订单数量'
+}, {
+	titleId: 19,
+	title_cnt: '争取更加精准的流量、定位更为精准的人群，是提高产出的有利方法'
+}, {
+	titleId: 20,
+	title_cnt: '过滤无效流量，减少无意义消费的系列工具及解决方案'
+}]

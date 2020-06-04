@@ -46,6 +46,10 @@
 	height: 375px;
 }
 
+.swiper-slide a {
+	display: block;
+}
+
 .demo { 
 	background: #FFFFFF; 
 	border: 1px solid #E8EAEC; 

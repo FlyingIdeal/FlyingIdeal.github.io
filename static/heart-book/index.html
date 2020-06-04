@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Expires" CONTENT="-1">
+<title>心书</title>
+<link type="text/css" rel="stylesheet" href="css/basic.css">
+<meta name="keywords" content="梅赛德斯-奔驰，奔驰，奔驰汽车 ">
+<meta name="description" content="欢迎浏览梅赛德斯-奔驰中国网站。在这里您可以浏览有关奔驰乘用车、AMG、商用汽车，梅赛德斯-奔驰的优质服务、最新消息及活动，一级方程式赛车的精彩信息以及职位招聘的相关信息。 ">
+<link href="http://www.ibm.com/favicon.ico" rel="SHORTCUT ICON" />
+<!--移动端版本兼容 -->
+<script type="text/javascript">
+	var phoneWidth =  parseInt(window.screen.width);
+	var phoneScale = phoneWidth/640;
+	var ua = navigator.userAgent;
+	if (/Android (\d+\.\d+)/.test(ua)){
+		var version = parseFloat(RegExp.$1);
+		if(version>2.3){
+			document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+		}else{
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+	}
+</script>
+</head>
+<body>
+<div class="main">
+	<img class="title_name" src="images/title_name.png" />
+	<div class="book"></div>
+	<div class="point">
+		<div class="pointOn"></div>
+		<div class="inductor"></div>
+	</div>
+	<a class="videoBtn" id="videoBtn" href="javascript:void(0);"><img src="images/videoBtn.png" /></a>
+</div>
+<div class="videoMask" id="videoMask"></div>
+<div class="videoMid" id="videoMid">
+	<div class="closeBtn" id="closeBtn"><img src="images/closeBtn.png" /></div>
+	<div class="videoCen">
+		<video id="videoObj" src="http://www.uwin.cc/benz/20150607/images/video.mp4" width="510px" height="280px" controls="controls" poster="images/poster.jpg">
+        Your browser does not support the video tag.
+    </video>
+	</div>
+</div>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/touchjs/0.2.14/touch.min.js"></script>
+<script type="text/javascript" src="js/queryloader.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+/************************初始化**************************************/
+body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,p,form,input,button{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}h2{font-size:14px}ul,ol li{list-style:none}body{font-size:12px;margin:0 auto;color:#6c6c6c;font-family:"微软雅黑",Helvetica;background:#FFFFFF;-webkit-text-size-adjust:none}fieldset,img{border:0}img{vertical-align:top}input,textarea{border:none 0}a{text-decoration:none;color:#666}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}.clearfix:after{content:"";display:block;clear:both}.clearfix{zoom:1}
+input{ outline: none;}
+a{ outline: none;}
+
+#loading{position:fixed;left:0px;top:0px;width:100%;height:100%;background:#FFFFFF url(../images/loading.gif) center center no-repeat;z-index:100;text-indent:-9999px;}
+
+body{ background: url(../images/bg.jpg) center top no-repeat;}
+.wrap{width: 640px; height: 1136px; position: relative; overflow: hidden; margin: 0 auto;}
+
+img{ position: absolute;}
+
+
+.p1{ left: 0px; top: 180px;}
+.p1_1{ left: 288px; top: 290px;}
+.p1_2{ left: 40px; top: 405px;}
+.p1_3{ left: 40px; top: 510px;}
+.p1_4{ left: 175px; top: 620px;}
+
+/**闪存**/
+
+.p2{left: 0px; top: 70px;}
+.p3{left: 90px; top: 280px;}
+.p4{left: 455px; top: 478px;}
+.p5{left: 365px; top: 510px;}
+.p6{left: 285px; top: 557px;}
+.p7{left: 178px; top: 590px;}
+
+.p8_1{left: 420px; top: 450px;}
+.p8_2{left: 315px; top: 485px;}
+.p8_3{left: 220px; top: 526px;}
+.p8_4{left: 123px; top: 564px;}
+
+/*3 中国闪存联盟*/
+.p9{left: 40px; top: 335px;}
+.p10{left: 0px; top: 500px;}
+.p11{left: 135px; top: 500px;}
+
+/*4 中国闪存联盟*/
+.p12{left: 0px; top: 500px;}
+.p13{left: 135px; top: 500px;}
+
+/*5 中国闪存联盟*/
+.p14{left: 0px; top: 500px;}
+.p15{left: 135px; top: 500px;}
+
+/*6 您将获得的利益*/
+.p16{left: 0px; top: 0px;}
+.p17{left: 245px; top: 325px;}
+.p18{left: 0px; top: 425px;}
+.p19{left: 0px; top: 533px;}
+.p20{left: 0px; top: 603px;}
+.p21{left: 0px; top: 670px;}
+
+/*7 IBM FlashSystem免费测试 100个机会 */
+.p24{left: 0px; top: 380px;}
+.p25{left: 230px; top: 540px;}
+
+/*8 恭喜你 你已经获得了*/
+
+.page8{ display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; background: #000000; z-index: 2;}
+.page8 .page8Box{ width: 640px; height: 1136px; margin: 0 auto; position: relative; background: url(../images/p30.png) 0 0 no-repeat;}
+.p26{left: 0px; top: 280px;}
+.name, .phone , .email{ background: url(../images/p27.png) 0 0 no-repeat; width: 300px; height: 58px; overflow: hidden;}
+.name span , .phone span , .email span{ display: inline; float: left; width: 50px; line-height: 58px; height: 58px; text-align: center; font-size: 18px; font-family: '方正兰亭黑简体'; color: #FFFFFF;}
+.name input , .phone input , .email input{ width: 230px; display: inline; float: left; padding: 8px 10px 9px; background: none; height: 41px; line-height: 41px; color: #FFFFFF; font-size: 18px; font-family: '方正兰亭黑简体';}
+.name{ position: absolute; left: 268px; top: 548px;}
+.phone{ position: absolute; left: 190px; top: 610px;}
+.email{ position: absolute; left: 108px; top: 670px;}
+.p29{left: -115px; top: 725px;}
+.p28{display: block;position: absolute;left: 425px;top: 730px; width: 98px; height: 116px; z-index: 3;}
+
+/*成功*/
+.success{ position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; text-align: center; z-index: 10; display: none; background: #000000;}
+.fail{ position: fixed; left: 0px; top: 0px; width: 100%; height: 100%;  text-align: center; z-index: 10; display: none; background: #000000;}
+.fail .failBox{ width: 640px; height: 1136px; position: relative; margin: 0 auto;}
+.fail a.more{ position: absolute; left: 270px; top: 430px; color: #F2B800; font-size: 32px; font-family: '方正兰亭黑简体';}
+.fail a.tel{ color: #FFFFFF; position: absolute; left: 275px; top: 493px; font-size: 26px; font-family: '方正兰亭黑简体';}
+.fail img,  .success img{ position: initial;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

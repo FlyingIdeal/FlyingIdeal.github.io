@@ -1,0 +1,567 @@
+@charset "UTF-8";
+html, body {
+  min-height: 100%;
+  _height: 100%;
+  color: rgba(255,255,255,0.9);
+}
+
+body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #2d505f;
+  background-image: url("img/cover-background.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-position: center;
+  line-height: 1.2em;
+  font-family: Georgia,"Times New Roman",Times,SimSun,FontAwesome,serif;
+}
+
+a {
+  color: #fff !important;
+}
+
+/**
+ * 文本
+ */
+.text {
+  margin: 10px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.dark.text {
+  color: #333;
+}
+
+.text .line {
+  line-height: 40px;
+}
+
+.text .column {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  width: 40px;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.text .divider {
+  height: 40px;
+  clear: both;
+}
+
+.small.text {
+  font-size: 20px;
+}
+
+
+
+#start-in-dtm.animate {
+
+}
+
+.medium.text {
+  font-size: 30px;
+}
+
+.large.text {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.huge.text {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+/**
+ * 物件
+ */
+.object {
+
+}
+
+.object img {
+  width: 100%;
+}
+
+/**
+ * 动画
+ */
+.animation {
+
+}
+
+/**
+ * 画布
+ */
+.canvas {
+
+}
+
+/**
+ * 图片
+ */
+.image {
+  text-align: center;
+}
+
+.magictime {
+  opacity: 0;
+}
+.magictime.visiable {
+  opacity: 1;
+}
+
+/**
+ * 按钮
+ */
+.button {
+  display: block;
+  line-height: 50px;
+  width: 240px;
+  text-align: center;
+  margin: 20px auto;
+  color: #ffffff;
+  background: transparent;
+}
+
+.visiable, .text.visiable, .object.visiable, .image.visiable, .text.line.visiable, .text.column.visiable {
+  opacity: 1;
+}
+/**
+ * 内容
+ */
+.inner {
+  margin: 0 auto;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9000;
+  display: none;
+}
+
+#cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  padding-top: 80px;
+  background-image: url("img/cover-background.jpg");
+  background-size: 100%;
+  background-position: top center;
+}
+#cover-ambition-heart {
+  width: 340px;
+  height: 340px;
+  margin: 0 auto;
+  position: relative;
+  background: url("img/cover-ambition-heart.png") no-repeat center left;
+}
+
+#cover-ambition-heart-shadow {
+  background: url("img/cover-ambition-heart-shadow.png") no-repeat center left;
+  width: 450px;
+  height: 450px;
+  background-size: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+  margin-left: -225px;
+  margin-top: -250px;
+}
+
+#cover-ambition-heart-shadow-2 {
+  background: url("img/cover-ambition-heart-shadow.png") no-repeat center left;
+  width: 450px;
+  height: 450px;
+  background-size: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+  margin-left: -150px;
+  margin-top: -230px;
+}
+
+
+#cover-ambition-heart.beat {
+  -webkit-animation:heart 800ms steps(1) infinite 0s;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    background-position:center left;
+  }
+  20% {
+    background-position:center center;
+  }
+  40% {
+    background-position:center right;
+  }
+  60% {
+    background-position:center center;
+  }
+  80% {
+    background-position:center right;
+  }
+  100% {
+    background-position:center left;
+  }
+}
+
+#story {
+  width: 640px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -320px;
+  z-index: 101;
+}
+
+#scroller {
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -220px;
+}
+
+#scroller.wide {
+  transition-duration: 1s;
+  -moz-transition-duration: 1s; /* Firefox 4 */
+  -webkit-transition-duration: 1s; /* Safari 和 Chrome */
+  -o-transition-duration: 1s; /* Opera */
+}
+
+#inner {
+  transition-timing-function: linear;
+  -moz-transition-timing-function: linear; /* Firefox 4 */
+  -webkit-transition-timing-function: linear; /* Safari 和 Chrome */
+  -o-transition-timing-function: linear; /* Opera */
+}
+
+#bookmark {
+  width: 73px;
+  height: 200px;
+  position: relative;
+  margin-top: -60px;
+  background-image: url("img/bookmark.png");
+  background-repeat: no-repeat;
+  background-size: 73px;
+  background-position: top center;
+}
+#bookmark i {
+  font-size: 30px;
+  color: #6498b4;
+  height: 12px;
+  overflow: hidden;
+  width: 12px;
+  background-image: url("img/arrow-up.png");
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  margin-left: -8px;
+  background-size: 20px;
+
+  -webkit-animation: arrow 4s linear infinite;
+  animation: arrow 4s linear infinite;
+}
+@-webkit-keyframes arrow {
+  0% {
+    bottom: 50%
+    /*background-color: rgba(255,255,255,1);*/
+  }
+
+
+
+  50% {
+    bottom: 80%;
+    /*background-color: rgba(255,255,255,0);*/
+  }
+
+  100% {
+    bottom: 50%;
+    /*background-color: rgba(255,255,255,0);*/
+  }
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 50%
+    /*background-color: rgba(255,255,255,1);*/
+  }
+
+
+
+  50% {
+    bottom: 80%;
+    /*background-color: rgba(255,255,255,0);*/
+  }
+
+  100% {
+    bottom: 50%;
+    /*background-color: rgba(255,255,255,0);*/
+  }
+}
+
+
+/**
+ * 方向盘
+ */
+#wheel {
+  width: 120px;
+  height: 120px;
+  border: 5px solid rgba(255,255,255,0.6);
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  border-radius: 50%;
+  margin-left: -60px;
+  z-index: 90009;
+  outline: none;
+  -webkit-touch-callout:none;
+  display: none;
+  background-image: url("img/wheel.png");
+  background-size: 100%;
+}
+#wheel:focus,
+#wheel:hover,
+#wheel:active,
+#wheel {
+  outline: none;
+}
+
+#wheel.steering {
+  -webkit-animation-name: steering;
+  animation-name: steering;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes steering {
+  0% {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+  }
+  25% {
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+  }
+  75% {
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+  }
+  100% {
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+  }
+}
+
+#book-cover-clip {
+  width: 640px;
+  height: 86px;
+  overflow: hidden;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -320px;
+  z-index: 3000;
+  background-image: url("img/book-cover-clip.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#book-cover-clip.no-title:before {
+  background: none;
+}
+
+#inner {
+  border-radius: 0 30px 0 0;
+  width: 500px;
+  height: 6645px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  position: relative;
+  overflow: hidden;
+}
+
+#inner-scroller {
+  width: 100%;
+  height: 6645px;
+}
+
+#inner-background {
+  position: absolute;
+  z-index: 0;
+  width: 500px;
+  height: 6645px;
+  line-height: 1em;
+}
+#inner-background img {
+
+}
+
+#inner .item {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+#cart {
+  width: 1200px;
+  top: 1700px;
+  z-index: 1002;
+  opacity: 1;
+  left: -40px;
+  transform: rotate(10deg);
+}
+
+#cart-with-smoke,
+#cart-with-big-smoke {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#cart-title {
+}
+
+#cart {
+  width: 1200px;
+  top: 2600px;
+  z-index: 1002;
+  opacity: 1;
+  left: -830px;
+  transform: rotate(-10deg);
+}
+
+#benz-car {
+  width: 1200px;
+}
+
+#benz-car img {
+  width: 1200px;
+}
+#benz-car-with-smoke,
+#benz-car-with-big-smoke {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#f1-car img,
+#benz-car-title img,
+#track-end-title img,
+#slogan img {
+  display: block;
+  margin: 0 auto;
+}
+
+#f1-car-with-smoke {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  top: -189px;
+  left: 50%;
+  margin-left: -46px !important;
+  opacity: 0;
+}
+
+#cla {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+@-webkit-keyframes animateOpacity06 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes animateOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animateOutOpacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#banz-car.animate {
+  opacity: 1 !important;
+  -webkit-animation:animateOutOpacity 800ms;
+}
+
+
+#cart-title.animateOpacity06,
+#benz-car-title.animateOpacity06 {
+  opacity: 0.6 !important;
+  -webkit-animation:animateOpacity06 1200ms;
+
+}
+
+#start-in-dtm.animate,
+#heart.animate,
+#cart-title.animate,
+#benz-car-title.animate,
+#f1-car.animate,
+#share-button.animate,
+#return-button.animate,
+#slogan.animate {
+  opacity: 1 !important;
+  -webkit-animation:animateOpacity 1200ms;
+}

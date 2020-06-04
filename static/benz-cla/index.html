@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Expires" CONTENT="-1">
+<title>CLA唯我独型</title>
+<meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no"/>
+<link type="text/css" rel="stylesheet" href="css/basic.css">
+<meta name="keywords" content="梅赛德斯-奔驰，奔驰，奔驰汽车 ">
+<meta name="description" content="欢迎浏览梅赛德斯-奔驰中国网站。在这里您可以浏览有关奔驰乘用车、AMG、商用汽车，梅赛德斯-奔驰的优质服务、最新消息及活动，一级方程式赛车的精彩信息以及职位招聘的相关信息。 ">
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script type="text/javascript" src="js/preloadjs.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/touchjs/0.2.14/touch.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="load">
+	<div id="loadImg"></div>
+	<div id="loadpro">0%</div>
+</div>
+<div class="main commonHeight">
+	<div class="" id="audioBtn"></div>
+	<img class="logo" src="images/logo.png"/>
+	<!--不是谁都敢来点不一样1-->
+	<div class="commonHeight diff-page">
+		<div class="wolf"><img src="images/wolf.png" /></div>
+		<div class="diff_txt"></div>
+		<div class="tips_up"><img src="images/tips_up.png" /></div>
+	</div>
+	<!--水滴2-->
+	<div class="commonHeight water-page" style="display:none;">
+		<div class="water" id="water"></div>
+		<div class="eye" id="eye"></div>
+		<div class="car" id="car"></div>
+		<div class="linggan_txt" id="linggan_txt"></div>
+		<div class="findBtn" id="water-findBtn"></div>
+		<div class="tips_up"><img src="images/tips_up.png" /></div>
+	</div>
+	<!--迷宫3-->
+	<div class="commonHeight migong-page" style="display:none;">
+		<div class="migong-box">
+			<div class="migong-center">
+				<div id="overHide" class="overHide"><img src="images/line.png" /></div>
+				<div id="ball" class="ball"></div>
+			</div>
+		</div>
+		<div id="migongBtn"></div>
+		<div id="out-txt"></div>
+		<div class="tips_up"><img src="images/tips_up.png" /></div>
+	</div>
+	<!--盲目-行走在山上4-->
+	<div class="commonHeight mangmu-page" id="mangmu-page" style="display:none;">
+		<div class="finger" id="finger"><img id="shanImg" src="shan/shan_1.jpg" /></div>
+		<div class="people-walk" id="people-walk"></div>
+		<div class="mangmu-btn" id="mangmu-btn"><img src="images/mangmu-btn.png" /></div>
+		<div id="finger-txt"></div>
+		<div class="tips_up"><img src="images/tips_up.png" /></div>
+	</div>
+	<!--人行走脚印页5 - -->
+	<div class="commonHeight Footprint-walk-page" id="Footprint-walk-page" style="display:none;">
+		<div id="foot-walk-people"><img id="footPeopleImg" src=""></div>
+		<div id="foot-turn"><img id="turnImg" src="turn/turn_1.jpg"></div>
+		<div class="findBtn" id="turnFindBtn"></div>
+		<div id="Footprint-txt"></div>
+		<div class="tips_up"><img src="images/tips_up.png" /></div>
+	</div>
+	<!--做自己6-->
+	<div class="commonHeight self-page self-page-black" id="self-page-black" style="display:none;">
+		<div id="zhiwen"></div>
+		<div id="zhiwenTxt"></div>
+		<div id="selfImg"><img id="libImg" src="" /></div>
+		<div id="weiwo"></div>
+		<div id="shareMask"></div>
+		<div id="selfBtn"><a class="btn_1" href="javascript:void(0);">了解详情</a><a class="btn_2" href="javascript:void(0);">试乘试驾</a><a class="btn_3" href="javascript:void(0);">金融计划</a><a class="btn_4" href="javascript:void(0);">分享</a></div>
+	</div>
+</div>
+<!--金融计划-->
+<div id="jinrong">
+	<div class="closeBtnBox"><a href="javascript:void(0);">close</a></div>
+	<div class="jinrongImg"><img src="images/jinrong.png" /></div>
+	<div class="jinrongBtn clearfix">
+        <a href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/passengercars/home/new_cars/models/cla-class/c117.flash.html">了解详情</a>
+    </div>
+</div>
+<!--了解详情-->
+<div id="product">
+	<div class="closeBtnBox"><a href="javascript:void(0);">close</a></div>
+	<div class="productImg"><img src="images/product.png" /></div>
+	<div class="productBtn clearfix">
+        <a href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/passengercars/home/new_cars/models/cla-class/c117.flash.html">了解详情</a>
+    </div>
+</div>
+<!--试乘试驾-->
+<div class="subMain" id="submitWarp">
+	<div class="closeBtnBox"><a href="javascript:void(0);">close</a></div>
+	<h3 class="title">申请试驾</h3>
+	<div class="formBox">
+		<ul>
+			<li class="clearfix">
+				<span>*姓名：</span>
+				<input id="name" class="inputText" type="text" value="" />
+			</li>
+			<li class="clearfix">
+				<span>*性别：</span>
+				<div class="sex clearfix" id="sex">
+					<div class="sexCom male"><i sexValue="男" class="active"></i>男</div>
+					<div class="sexCom female"><i sexValue="女"></i>女</div>
+				</div>
+			</li>
+			<li class="clearfix">
+				<span>*手机号码：</span>
+				<input id="Phone" class="inputText" type="text" value="" />
+			</li>
+			<li class="clearfix">
+				<span>*省份：</span>
+				<div class="mselect">
+                         <h4>北京</h4>
+               		<select name="dealerprovince" id="province">
+               		    <option value="安徽">安徽</option>
+               		    <option selected="selected" value="北京">北京</option>
+               		    <option value="福建">福建</option>
+               		    <option value="甘肃">甘肃</option>
+               		    <option value="广东">广东</option>
+               		    <option value="广西">广西</option>
+               		    <option value="贵州">贵州</option>
+               		    <option value="海南">海南</option>
+               		    <option value="河北">河北</option>
+               		    <option value="河南">河南</option>
+               		    <option value="黑龙江">黑龙江</option>
+               		    <option value="湖北">湖北</option>
+               		    <option value="湖南">湖南</option>
+               		    <option value="吉林">吉林</option>
+               		    <option value="江苏">江苏</option>
+               		    <option value="江西">江西</option>
+               		    <option value="辽宁">辽宁</option>
+               		    <option value="内蒙古">内蒙古</option>
+               		    <option value="宁夏">宁夏</option>
+               		    <option value="青海">青海</option>
+               		    <option value="山东">山东</option>
+               		    <option value="山西">山西</option>
+               		    <option value="陕西">陕西</option>
+               		    <option value="上海">上海</option>
+               		    <option value="四川">四川</option>
+               		    <option value="天津">天津</option>
+               		    <option value="西藏">西藏</option>
+               		    <option value="新疆">新疆</option>
+               		    <option value="云南">云南</option>
+               		    <option value="浙江">浙江</option>
+               		    <option value="重庆">重庆</option>
+               		</select>
+                    </div>
+				<em>*城市</em>
+				<div class="mselect">
+                         <h4>北京市</h4>
+     					<select name="dealercity" id="city">
+                         	 <option value="北京市">北京市</option>
+                         </select>
+                    </div>
+			</li>
+			<li class="clearfix">
+                    <span>*经销商：</span>
+				<div class="mselect agency">
+                         <h4 data-init="请选择经销商">北京波士通达汽车销售服务有限公司</h4>
+                         <select name="dealer" id="distributor">
+                         	<option selected="selected" value="北京波士通达汽车销售服务有限公司">北京波士通达汽车销售服务有限公司</option>
+                         	<option value="北京博瑞祥驰汽车销售服务中心">北京博瑞祥驰汽车销售服务中心</option>
+                         	<option value="利星行天竺之星汽车有限公司">利星行天竺之星汽车有限公司</option>
+                         	<option value="北京鹏龙星徽汽车销售服务有限公司">北京鹏龙星徽汽车销售服务有限公司</option>
+                         	<option value="北京保利星徽汽车销售服务有限公司">北京保利星徽汽车销售服务有限公司</option>
+                         	<option value="北京之星汽车服务有限公司">北京之星汽车服务有限公司</option>
+                         	<option value="利星行之星（北京）汽车有限公司">利星行之星（北京）汽车有限公司</option>
+                         	<option value="北京亚奥之星汽车服务有限公司">北京亚奥之星汽车服务有限公司</option>
+                         	<option value="北京市北奔汽车修理厂">北京市北奔汽车修理厂</option>
+                         	<option value="北京百得利之星汽车销售有限公司">北京百得利之星汽车销售有限公司</option>
+                         	<option value="利星行（北京）汽车有限公司">利星行（北京）汽车有限公司</option>
+                         	<option value="利星行平治（北京）汽车有限公司">利星行平治（北京）汽车有限公司</option>
+                         	<option value="北京鹏龙星徽汽车销售服务有限公司崇文展厅">北京鹏龙星徽汽车销售服务有限公司崇文展厅</option>
+                         	<option value="北京鹏龙大道汽车销售服务有限公司">北京鹏龙大道汽车销售服务有限公司</option>
+                         	<option value="北京波士诚达汽车销售服务有限公司">北京波士诚达汽车销售服务有限公司</option>
+                         	<option value="北京星徽旗舰汽车销售服务中心有限公司">北京星徽旗舰汽车销售服务中心有限公司</option>
+                         	<option value="利星行平治（北京）汽车服务有限公司">利星行平治（北京）汽车服务有限公司</option>
+                         	<option value="北京波士瑞达汽车销售服务有限公司">北京波士瑞达汽车销售服务有限公司</option>
+                         </select>
+                    </div>
+			</li>
+		</ul>
+	</div>
+	<div class="agree clearfix">隐私条款<i class="active"></i>
+		<p>我仔细阅读了并接受所附的隐私条款，并且我同意其他戴姆勒集团公司及/或北京梅赛德斯-奔驰销售服务有限公司及/或授权经销商收集、使用、分享我的私人信息；同时我同意北京梅赛德斯-奔驰销售服务有限公司和/或梅赛德斯-奔驰（中国）汽车销售有限公司向我发送相关市场或营销资料。</p>
+	</div>
+	<div class="submit clearfix">
+          <a id="submitForm" href="javascript:void(0);" class="submitBtn">提交申请</a>
+     </div>
+</div>
+<div sytle="display:none;">
+	<audio id="video_1" loop="loop" autoplay src="sound/background.mp3"></audio>
+</div>
+<div sytle="display:none;">
+	<audio id="video_2" loop="loop" src="sound/zhuangpoqiang.mp3"></audio>
+</div>
+<div sytle="display:none;">
+	<audio id="video_3" src="sound/zhuangqiang.mp3"></audio>
+</div>
+<script type="text/javascript" src="js/submit.js"></script>
+</body>
+</html>

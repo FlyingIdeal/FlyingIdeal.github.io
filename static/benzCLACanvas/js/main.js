@@ -45,50 +45,50 @@ $(function(){
 	//图片数组img
 	var imgData0 = new Array();
 	var imglist0 = {};
-	imgData0.push({name:"audioBtn", path:'images/audioBtn.png'});
-	imgData0.push({name:"ball", path:'images/ball.png'});
-	imgData0.push({name:"ballShadow", path:'images/ballShadow.png'});
-	imgData0.push({name:"Bg", path:'images/Bg.jpg'});
-	imgData0.push({name:"car", path:'images/car.png'});
-	imgData0.push({name:"closeBtn", path:'images/closeBtn.png'});
-	imgData0.push({name:"diff_txt", path:'images/diff_txt.png'});
-	imgData0.push({name:"eye", path:'images/eye.png'});
-	imgData0.push({name:"findBtn", path:'images/findBtn.png'});
-	imgData0.push({name:"fingerTxt", path:'images/finger-txt.png'});
-	imgData0.push({name:"FootprintBtn", path:'images/FootprintBtn.png'});
-	imgData0.push({name:"Footprint-txt", path:'images/Footprint-txt.png'});
-	imgData0.push({name:"jinrong", path:'images/jinrong.png'});
-	imgData0.push({name:"line", path:'images/line.png'});
-	imgData0.push({name:"linggan_txt", path:'images/linggan_txt.png'});
-	imgData0.push({name:"load", path:'images/load.jpg'});
-	imgData0.push({name:"logo", path:'images/logo.png'});
-	imgData0.push({name:"logo2", path:'images/logo2.png'});
-	imgData0.push({name:"mangmuBtn", path:'images/mangmu-btn.png'});
-	imgData0.push({name:"migongBg", path:'images/migongBg.png'});
-	imgData0.push({name:"migongBtn", path:'images/migongBtn.png'});
-	imgData0.push({name:"migongPo", path:'images/migongPo.png'});
-	imgData0.push({name:"out-txt", path:'images/out-txt.png'});
-	imgData0.push({name:"peopleDecompose", path:'images/people-decompose.png'});
-	imgData0.push({name:"product", path:'images/product.png'});
-	imgData0.push({name:"productBg", path:'images/productBg.jpg'});
-	imgData0.push({name:"selfBtn", path:'images/selfBtn.png'});
-	imgData0.push({name:"selfFinger", path:'images/self-finger.png'});
-	imgData0.push({name:"selfTxt", path:'images/self-txt.png'});
-	imgData0.push({name:"share", path:'images/share.jpg'});
-	imgData0.push({name:"shareMask", path:'images/shareMask.png'});
-	imgData0.push({name:"submitBg", path:'images/submitBg.jpg'});
-	imgData0.push({name:"submiticon", path:'images/submiticon.png'});
-	imgData0.push({name:"tips_up", path:'images/tips_up.png'});
-	imgData0.push({name:"water", path:'images/water.png'});
-	imgData0.push({name:"weiwo", path:'images/weiwo.png'});
-	imgData0.push({name:"wolf", path:'images/wolf.png'});
+	imgData0.push({name:"audioBtn", path:'../benz-cla/images/audioBtn.png'});
+	imgData0.push({name:"ball", path:'../benz-cla/images/ball.png'});
+	imgData0.push({name:"ballShadow", path:'../benz-cla/images/ballShadow.png'});
+	imgData0.push({name:"Bg", path:'../benz-cla/images/Bg.jpg'});
+	imgData0.push({name:"car", path:'../benz-cla/images/car.png'});
+	imgData0.push({name:"closeBtn", path:'../benz-cla/images/closeBtn.png'});
+	imgData0.push({name:"diff_txt", path:'../benz-cla/images/diff_txt.png'});
+	imgData0.push({name:"eye", path:'../benz-cla/images/eye.png'});
+	imgData0.push({name:"findBtn", path:'../benz-cla/images/findBtn.png'});
+	imgData0.push({name:"fingerTxt", path:'../benz-cla/images/finger-txt.png'});
+	imgData0.push({name:"FootprintBtn", path:'../benz-cla/images/FootprintBtn.png'});
+	imgData0.push({name:"Footprint-txt", path:'../benz-cla/images/Footprint-txt.png'});
+	imgData0.push({name:"jinrong", path:'../benz-cla/images/jinrong.png'});
+	imgData0.push({name:"line", path:'../benz-cla/images/line.png'});
+	imgData0.push({name:"linggan_txt", path:'../benz-cla/images/linggan_txt.png'});
+	imgData0.push({name:"load", path:'../benz-cla/images/load.jpg'});
+	imgData0.push({name:"logo", path:'../benz-cla/images/logo.png'});
+	imgData0.push({name:"logo2", path:'../benz-cla/images/logo2.png'});
+	imgData0.push({name:"mangmuBtn", path:'../benz-cla/images/mangmu-btn.png'});
+	imgData0.push({name:"migongBg", path:'../benz-cla/images/migongBg.png'});
+	imgData0.push({name:"migongBtn", path:'../benz-cla/images/migongBtn.png'});
+	imgData0.push({name:"migongPo", path:'../benz-cla/images/migongPo.png'});
+	imgData0.push({name:"out-txt", path:'../benz-cla/images/out-txt.png'});
+	imgData0.push({name:"peopleDecompose", path:'../benz-cla/images/people-decompose.png'});
+	imgData0.push({name:"product", path:'../benz-cla/images/product.png'});
+	imgData0.push({name:"productBg", path:'../benz-cla/images/productBg.jpg'});
+	imgData0.push({name:"selfBtn", path:'../benz-cla/images/selfBtn.png'});
+	imgData0.push({name:"selfFinger", path:'../benz-cla/images/self-finger.png'});
+	imgData0.push({name:"selfTxt", path:'../benz-cla/images/self-txt.png'});
+	imgData0.push({name:"share", path:'../benz-cla/images/share.jpg'});
+	imgData0.push({name:"shareMask", path:'../benz-cla/images/shareMask.png'});
+	imgData0.push({name:"submitBg", path:'../benz-cla/images/submitBg.jpg'});
+	imgData0.push({name:"submiticon", path:'../benz-cla/images/submiticon.png'});
+	imgData0.push({name:"tips_up", path:'../benz-cla/images/tips_up.png'});
+	imgData0.push({name:"water", path:'../benz-cla/images/water.png'});
+	imgData0.push({name:"weiwo", path:'../benz-cla/images/weiwo.png'});
+	imgData0.push({name:"wolf", path:'../benz-cla/images/wolf.png'});
 
 	//图片及js文件数组lib
 	var imgData1 = new Array();
 	var imgList1 = {};
 	for(var i1=1; i1<=36; i1++)
 	{
-		imgData1.push({name:"sbl_" + String(i1), path:"lib/sbl_" + String(i1) + ".jpg"});
+		imgData1.push({name:"sbl_" + String(i1), path:"../benz-cla/lib/sbl_" + String(i1) + ".jpg"});
 	}
 
 	//图片及js文件数组shan
@@ -96,7 +96,7 @@ $(function(){
 	var imgList2 = {};
 	for(var i2=1; i2<=10; i2++)
 	{
-		imgData2.push({name:"shan_" + String(i2), path:"shan/shan_" + String(i2) + ".jpg"});
+		imgData2.push({name:"shan_" + String(i2), path:"../benz-cla/shan/shan_" + String(i2) + ".jpg"});
 	}
 
 	//图片及js文件数组turn
@@ -104,7 +104,7 @@ $(function(){
 	var imgList3 = {};
 	for(var i3=1; i3<=22; i3++)
 	{
-		imgData3.push({name:"turn_" + String(i3), path:"turn/turn_" + String(i3) + ".jpg"});
+		imgData3.push({name:"turn_" + String(i3), path:"../benz-cla/turn/turn_" + String(i3) + ".jpg"});
 	}
 
 	//图片及js文件数组walk
@@ -112,7 +112,7 @@ $(function(){
 	var imgList4 = {};
 	for(var i4=1; i4<=28; i4++)
 	{
-		imgData4.push({name:"turn_" + String(i4), path:"turn/turn_" + String(i4) + ".jpg"});
+		imgData4.push({name:"turn_" + String(i4), path:"../benz-cla/turn/turn_" + String(i4) + ".jpg"});
 	}
 
 

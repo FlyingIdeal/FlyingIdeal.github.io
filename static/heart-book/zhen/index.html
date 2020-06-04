@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>真心</title>
+<meta name="keywords" content="梅赛德斯-奔驰，奔驰，奔驰汽车 ">
+<meta name="description" content="欢迎浏览梅赛德斯-奔驰中国网站。在这里您可以浏览有关奔驰乘用车、AMG、商用汽车，梅赛德斯-奔驰的优质服务、最新消息及活动，一级方程式赛车的精彩信息以及职位招聘的相关信息。 ">
+<link rel="stylesheet" type="text/css" href="base.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript">
+  var phoneWidth =  parseInt(window.screen.width);
+  var phoneScale = phoneWidth/640;
+  var ua = navigator.userAgent;
+  if (/Android (\d+\.\d+)/.test(ua)){
+    var version = parseFloat(RegExp.$1);
+    if(version>2.3){
+      document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+    }else{
+      document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+  } else {
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+  }
+</script>
+</head>
+<body>
+<button id="shutter" style="display: none"></button>
+<div id="book-cover">
+  <img src="img/book-cover.png" alt=""/>
+</div>
+
+<div id="starter">
+  <div class="logo" style="position:absolute; left:20px; top:20px;"><img src="http://www.uwin.cc/benz/20150607/images/logo.png" /></div>
+  <div class="image" id="starter-you-have-a">
+    <img src="img/you-have-a.png" alt="" class=""/>
+  </div>
+  <div class="image" id="starter-start-from-your-heart">
+    <div id="starter-start-from-your-heart-shadow"></div>
+    <div id="starter-start-from-your-heart-shadow-2"></div>
+  </div>
+  <div class="image" id="starter-enter-to-your-heart">
+    <br/>
+    <img src="img/enter-to-your-heart-new.png" alt="" style="width: 45%"/>
+  </div>
+</div>
+
+<div id="person-slider">
+  <div class="line"></div>
+  <div class="circle"></div>
+  <img src="img/arrow-top.png" alt=""/>
+</div>
+
+<div id="person">
+  <div id="person-name" class="large text magictime" data-delay="0" data-in="vanishIn">
+    <img src="img/liu-xiang-cheng-name.png" alt=""/>
+  </div>
+  <div id="person-photo"></div>
+  <div id="person-ribbon"></div>
+  <div class="frame"></div>
+</div>
+
+<div id="story" style="display: none;">
+
+  <section id="section-event" class="hide">
+    <!--
+    <div id="section-event-shell-cases-holes" class="magictime" data-delay="0" data-in="vanishIn" data-out="vanishOut"></div>
+    -->
+    <div class="text magictime" data-delay="100" data-in="vanishIn">
+      <img src="img/memory-in-photos-text.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-event-camera" data-delay="200" data-in="slideLeftRetourn" data-out="slideLeft">
+      <img src="img/camera.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-event-photo" data-delay="300" data-in="slideRightRetourn" data-out="slideRight">
+      <img src="img/section-event-photo.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-event-bullets" data-delay="400">
+      <img src="img/section-event-bullets.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-event-film" data-delay="500" data-in="slideLeftRetourn" data-out="slideLeft">
+      <img src="img/section-event-film.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-event-films" data-delay="600" data-in="slideLeftRetourn" data-out="slideLeft">
+      <img src="img/section-event-films.png" alt=""/>
+    </div>
+    <div class="frame"></div>
+  </section>
+
+  <section id="section-photo-1" class="hide">
+    <div class="text magictime" data-delay="0">
+      <img src="img/his-camera-text.png" alt=""/>
+    </div>
+    <div class="object magictime scratcher" data-delay="1000">
+      <div class="canvas canvas-1"><i></i></div>
+      <div class="text">
+        <div class="line magictime" data-delay="2000"><img src="img/scratch-text.png" alt=""/></div>
+      </div>
+      <div class="canvas canvas-2"></div>
+    </div>
+    <div class="object magictime" id="section-photo-1-camera" data-delay="300" data-in="slideRightRetourn" data-out="slideRight">
+      <i></i>
+      <img src="img/camera.png" alt=""/>
+    </div>
+    <div class="frame"></div>
+  </section>
+
+  <section id="section-photo-2" class="hide">
+    <div class="text magictime" data-delay="0">
+      <img src="img/section-scratch-text.png" alt="" style="width: 80%"/>
+    </div>
+    <div class="object magictime scratcher" data-delay="500" >
+      <div class="canvas canvas-1"></div>
+      <div class="text">
+        <div class="line magictime" data-delay="1000"><img src="img/scratch-text.png" alt=""/></div>
+      </div>
+      <div class="canvas canvas-2"><i></i></div>
+    </div>
+    <div class="object magictime" id="section-photo-2-camera" data-delay="300" data-in="slideLeftRetourn" data-out="slideLeft">
+      <i></i>
+      <img src="img/camera.png" alt=""/>
+    </div>
+    <div class="frame"></div>
+  </section>
+
+  <section id="section-slogan" class="hide">
+    <div class="text magictime" data-delay="0">
+      <img src="img/true-heart.png" alt="" width="40%"/>
+    </div>
+    <div class="text magictime" id="slogan" data-delay="2000" >
+      <img src="img/slogan.png" alt="" style="width: 50%"/>
+    </div>
+    <div class="object magictime" id="section-slogan-leica" data-delay="0">
+      <img src="img/leica.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-slogan-films-drop" data-delay="200">
+      <img src="img/films-drop.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-slogan-cap" data-delay="500">
+      <img src="img/cap.png" alt=""/>
+    </div>
+    <div class="object magictime" id="section-slogan-camera" data-delay="300">
+      <img src="img/camera.png" alt=""/>
+    </div>
+    <a href="../index.html" class="button magictime" data-delay="1500">
+      <img src="img/retest.png" alt=""/>
+    </a>
+    <a href="javascript:void(0);" class="button magictime invite" data-delay="1800">
+      <img src="img/share.png" alt=""/>
+    </a>
+    <div class="frame"></div>
+  </section>
+</div>
+<!--分享遮罩层-->
+<div class="mask">
+  <div class="maskBox">
+    <div class="shareTop">
+      <img src="http://www.uwin.cc/benz/20150607/images/shareTop.png" />
+    </div>
+  </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+
+<script src="../ye/zepto.min.js"></script>
+<script src="../ye/zepto.touch.js"></script>
+<script src="../ye/zepto.fx.js"></script>
+<script src="../ye/zepto.magic.js"></script>
+<script src="zepto.scratchpad.js"></script>
+<script type="text/javascript" src="../js/music.js"></script>
+<script src="../js/queryloader.js"></script>
+<script src="main.js"></script>
+</div>
+</body>
+</html>

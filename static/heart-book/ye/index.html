@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>野心</title>
+  <meta name="keywords" content="梅赛德斯-奔驰，奔驰，奔驰汽车 ">
+  <meta name="description" content="欢迎浏览梅赛德斯-奔驰中国网站。在这里您可以浏览有关奔驰乘用车、AMG、商用汽车，梅赛德斯-奔驰的优质服务、最新消息及活动，一级方程式赛车的精彩信息以及职位招聘的相关信息。 ">
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript">
+    var phoneWidth =  parseInt(window.screen.width);
+    var phoneScale = phoneWidth/640;
+    var ua = navigator.userAgent;
+    var isAndroid = false;
+    if(navigator.userAgent.indexOf('ndroid') > 0) {
+      isAndroid = true;
+    }
+    if (/Android (\d+\.\d+)/.test(ua)){
+      var version = parseFloat(RegExp.$1);
+      if(version>2.3){
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+      }else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+      }
+    } else {
+      document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    }
+  </script>
+</head>
+<body>
+<div id="overlay"></div>
+<div id="cover">
+  <div class="logo" style="position:absolute; left:20px; top:20px;"><img src="http://www.uwin.cc/benz/20150607/images/logo.png" /></div>
+  <div class="inner">
+    <div class="image " id="cover-you-have-a">
+      <img src="img/cover-you-have-a.png" alt="" class=""/>
+    </div>
+    <div class="image beat" id="cover-ambition-heart" data-delay="100" data-in="spaceInDown" data-out="spaceOutDown">
+      <div class="image" id="cover-ambition-heart-shadow"></div>
+      <div class="image" id="cover-ambition-heart-shadow-2"></div>
+    </div>
+    <div class="medium text" id="cover-you-ceate-the-rules">
+      <br/>
+      <img src="img/cover-title.png" alt="" style="width: 45%"/>
+    </div>
+  </div>
+</div>
+
+<div id="story">
+  <div id="scroller" class="out">
+
+    <div id="bookmark"><i></i></div>
+    <div id="inner">
+      <div id="inner-scroller">
+
+        <div class="item image" data-top="80" id="title">
+          <img src="img/title.png" alt="" style="width: 350px;"/>
+        </div>
+
+        <div class="item dark text" data-top="970" id="start-in-dtm">
+          <img src="img/start-in-dtm.png" alt=""/>
+        </div>
+
+        <div class="item" data-top="2180" data-left="85" id="cart-title">
+          <img src="img/cart-title.png" alt="" style="width: 180px;"/>
+        </div>
+
+        <div class="item" data-top="1650" id="cart">
+          <img src="img/cart.png" alt="" id="cart-no-smoke"/>
+          <img src="img/cart-with-smoke.png" alt="" id="cart-with-smoke"/>
+          <!--<img src="img/cart-with-big-smoke.png" alt="" id="cart-with-big-smoke"/>-->
+        </div>
+
+        <div class="item" data-top="3260" data-left="0" id="benz-car-title">
+          <img src="img/benz-car-title.png" alt=""/>
+        </div>
+
+        <div class="item" data-top="2430" data-left="-850" id="benz-car">
+          <img src="img/benz-car.png" alt="" id="benz-car-no-smoke"/>
+          <img src="img/benz-car-with-smoke.png" alt="" id="benz-car-with-smoke"/>
+        </div>
+
+        <div class="item" data-top="3620" id="f1-car">
+          <img src="img/f1-car.png" alt="" id="f1-car-no-smoke"/>
+          <img src="img/f1-car-with-smoke.png" alt="" id="f1-car-with-smoke"/>
+        </div>
+        <div class="item" data-top="4780" data-left="0" id="heart" data-delay="0" style="text-align: center">
+          <img src="img/heart.png" alt="" style="width: 55%"/>
+        </div>
+        <div class="item" data-top="5050" data-left="0" id="slogan" data-delay="0">
+          <img src="img/slogan.png" alt=""/>
+        </div>
+        <!--
+                <div class="item" data-top="4900" data-left="0" id="track-end-title" data-delay="0">
+                  <img src="img/track-end-title.png" alt=""/>
+                </div>
+
+                <div class="item" data-top="5100" data-left="0" id="slogan" data-delay="500">
+                  <img src="img/slogan.png" alt=""/>
+                </div>
+        -->
+        <div class="item" data-top="5200" id="return-button" data-delay="1000">
+          <a href="../index.html" id="reset-button" class="button">
+            <img src="img/retest.png" alt=""/>
+          </a>
+          <a href="javascript:void(0);" id="share-button" class="button">
+            <img src="img/share.png" alt=""/>
+          </a>
+        </div>
+        <div id="inner-background">
+          <img src="img/inner/1.jpg" alt=""/>
+          <img src="img/inner/2.jpg" alt=""/>
+          <img src="img/inner/3.jpg" alt=""/>
+          <img src="img/inner/4.jpg" alt=""/>
+          <img src="img/inner/5.jpg" alt=""/>
+          <img src="img/inner/6.jpg" alt=""/>
+          <img src="img/inner/7.jpg" alt=""/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--分享遮罩层-->
+<div class="mask">
+  <div class="maskBox">
+    <div class="shareTop">
+      <img src="http://www.uwin.cc/benz/20150607/images/shareTop.png" />
+    </div>
+  </div>
+</div>
+<div id="book-cover-clip"></div>
+<div id="wheel" type="button"></div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+<script src="zepto.touch.js"></script>
+<script src="zepto.fx.js"></script>
+<script src="zepto.magic.js"></script>
+<script src="../js/queryloader.js"></script>
+<script type="text/javascript" src="../js/music.js"></script>
+<script src="main.min.js"></script>
+<script src="wechat.js"></script>
+</body>
+</html>

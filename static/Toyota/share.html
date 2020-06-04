@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Expires" CONTENT="-1">
+<title>丰田双擎STATION&试驾会</title>
+<link type="text/css" rel="stylesheet" href="css/basic.css">
+<meta name="keywords" content="丰田,toyota,丰田汽车,丰田汽车(中国)投资有限公司,汽车" />
+<meta name="description" content="丰田的企业讯息,产品以及技术,环境和社会活动等企业报道的官方网站。" />
+<link rel="shortcut icon" href=""/>
+</head>
+<body>
+<div class="wrap">
+	<div class="toper">
+		<div class="container clearfix">
+			<div class="logo fl"><img src="images/logo.png"></div>
+			<div class="topicIcon fr"><img src="images/topicIcon.png"></div>
+		</div>
+	</div>
+	<div class="shareBanner">
+		<div class="container">
+			<div class="shareSlide">
+				<div class="bd">
+					<ul class="clearfix">
+						<li class="s_1">
+							<img src="images/shareBanner_1.png">
+						</li>
+						<li class="s_2">
+							<img src="images/shareBanner_1.png">
+						</li>
+						<li class="s_3">
+							<img src="images/shareBanner_1.png">
+						</li>
+						<li class="s_1">
+							<img src="images/shareBanner_1.png">
+						</li>
+					</ul>
+				</div>
+				<div class="sd">
+					<ul class="clearfix">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--瀑布流-->
+	<div class="waterfull">
+		<div class="container">
+			<div class="shareTitle"><img src="images/shareTitle.png"></div>
+			<div class="shareList clearfix" id="waterfall">
+				<!-- <div class="shareBox">
+					<div class="pic"><img src="images/indexGiftMob.png"></div>
+					<div class="txt">
+						<h3>胖嘟嘟艾特文：</h3>
+						<p>今天的雷凌双擎试驾活动感觉不错哟，有空的可以来体验一下。</p>
+					</div>
+				</div> -->
+			</div>
+			<!-- <div class="clickAddMore"><a href="javascript:void(0);" id="append"><img src="images/clickMore.png"></a></div> -->
+		</div>
+	</div>
+</div>
+<script type="text/x-handlebars-template" id="waterfall-tpl">
+{{#result}}
+    <div class="shareBox">
+		<div class="pic"><img src="{{image}}"></div>
+		<div class="txt">
+			<h3>{{name}}</h3>
+			<p>{{description}}</p>
+		</div>
+	</div>
+{{/result}}
+</script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/js/jquery.SuperSlide.2.1.3.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
+<script src="./js/waterfall.min.js"></script>
+<script type="text/javascript">
+(function($) {
+	$(function() {
+
+		$(".shareSlide").slide({
+			mainCell: '.bd ul',
+			titCell: '.sd li',
+			effect: "left",
+			autoPlay: true,
+			interTime: 5000
+		});
+
+
+		var index = 10; //每次下拉显示的个数
+		var page = 0; //json数据的总个数/index的除数(向上取整)
+		var yushu = 0; //json数据的总个数/index的余数
+		var num = 0; //当前索引
+
+		$('#waterfall').waterfall({
+			itemCls: 'shareBox',
+			prefix: 'waterfall',
+			colWidth: 298,
+			gutterWidth: 22,
+			gutterHeight: 15,
+			align: 'left',
+			minCol: 1,
+			bufferPixel: -50,
+			isFadeIn: true,
+			isAnimated: true,
+			animationOptions: {},
+			dataType: 'json',
+			path: function(page) {
+				return 'js/data.json';
+			},
+			loadingMsg: '',
+			callbacks: {
+				/*
+				 * loadingStart
+				 * @param {Object} loading $('#waterfall-loading')
+				 */
+				loadingStart: function($loading) {
+					$loading.show();
+					//console.log('loading', 'start');
+				},
+
+				/*
+				 * loadingFinished
+				 * @param {Object} loading $('#waterfall-loading')
+				 * @param {Boolean} isBeyondMaxPage
+				 */
+				loadingFinished: function($loading, isBeyondMaxPage) {
+					if (!isBeyondMaxPage) {
+						$loading.fadeOut();
+						//console.log('loading finished');
+					} else {
+						//console.log('loading isBeyondMaxPage');
+						$loading.remove();
+					}
+
+				},
+
+				/*
+				 * loadingError
+				 * @param {String} xhr , "end" "error"
+				 */
+				loadingError: function($message, xhr) {
+					$message.html('Data load faild, please try again later.');
+				},
+
+				/*
+				 * renderData
+				 * @param {String} data
+				 * @param {String} dataType , "json", "jsonp", "html"
+				 */
+				renderData: function(data, dataType, $loading) {
+
+
+					var tpl,
+						template;
+
+					page = Math.ceil(data.result.length / index);
+					yushu = data.result.length % index;
+
+					console.log(data.result.length + '%%%%%%%%%%' + page + '************************' + yushu);
+
+
+					var _json = {}; //截取data数据
+					_json.result = [];
+
+
+					if (num > page) {
+						$('#waterfall').waterfall('pause', function() {
+							$('#waterfall-message').html('<p style="color:#fff; font-size:18px; padding:40px 0 20px;">没有更多了</p>')
+							//alert('no more data');
+						});
+					} else {
+
+						//console.log(num);
+
+						if (num > page - 1 && yushu > 0) {
+							_json.result = data.result.slice((num - 1) * index, yushu);
+						} else {
+							console.log(num * index + '+++++++++++++++' + index);
+							_json.result = data.result.slice(num * index, (num + 1) * index);
+						}
+
+						num++;
+
+					}
+
+
+					if (dataType === 'json' || dataType === 'jsonp') { // json or jsonp format
+						tpl = $('#waterfall-tpl').html();
+						template = Handlebars.compile(tpl);
+
+						return template(_json);
+					} else { // html format
+						return data;
+					}
+				}
+			},
+
+			debug: false
+		});
+
+	})
+
+})(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Expires" CONTENT="-1">
+<title>CLA唯我独型</title>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<link type="text/css" rel="stylesheet" href="css/basic.css">
+<meta name="keywords" content="梅赛德斯-奔驰，奔驰，奔驰汽车 ">
+<meta name="description" content="欢迎浏览梅赛德斯-奔驰中国网站。在这里您可以浏览有关奔驰乘用车、AMG、商用汽车，梅赛德斯-奔驰的优质服务、最新消息及活动，一级方程式赛车的精彩信息以及职位招聘的相关信息。 ">
+<!--移动端版本兼容 -->
+<script type="text/javascript">
+	var phoneWidth =  parseInt(window.screen.width);
+	var phoneScale = phoneWidth/640;
+	var ua = navigator.userAgent;
+	if (/Android (\d+\.\d+)/.test(ua)){
+		var version = parseFloat(RegExp.$1);
+		if(version>2.3){
+			document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+		}else{
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+	}
+</script>
+</head>
+<body>
+<div class="" id="audioBtn"></div>
+<div class="productMain">
+	<div class="productImg"><img src="images/product.png" /></div>
+	<div class="productBtn clearfix">
+        <a href="http://www.mercedes-benz.com.cn/content/china/mpc/mpc_china_website/zhng/home_mpc/passengercars/home/new_cars/models/cla-class/c117.flash.html">了解详情</a>
+        <span href="javascript:void(0);" class="share" id="shareBtn">share</span>
+    </div>
+</div>
+<div sytle="display:none;">
+    <audio id="video_1" loop="loop" autoplay src="sound/background.mp3"></audio>
+</div>
+<div id="shareMask"></div>
+<script type="text/javascript">
+$(function(){
+
+    $("#audioBtn").click(function(){
+        var audioBtn = $(this);
+        if(audioBtn.attr("class") == "soundStop")
+        {
+            audioBtn.removeClass("soundStop");
+            playVid();
+        }
+        else
+        {
+            audioBtn.addClass("soundStop");
+            pauseVid();
+        }
+    });
+
+    $('#shareBtn').bind('click', function(){
+        $('#shareMask').show();
+    });
+    $('#shareMask').bind('click', function(){
+        $(this).hide();
+    });
+
+})
+
+function playVid()
+{
+    $("#video_1").get(0).play();
+}
+
+function pauseVid()
+{
+    $("#video_1").get(0).pause();
+}
+</script>
+</body>
+</html>

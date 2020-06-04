@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>梅赛德斯-奔驰130周年</title>
+<meta name="viewport" content="width=1136, target-densitydpi=device-dpi, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="js/shrek.js"></script>
+<script src="js/queryloader.js"></script>
+<script src="js/planeJson.js"></script>
+<script src="js/main.js"></script>
+<style type="text/css">
+body{
+	background: #000;
+	overflow: hidden;
+}
+#main,
+#home{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+div,canvas,video,p,span,img,source{
+	padding: 0;
+	margin: 0;
+	/*双面渲染*/
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+}
+#bgStage{
+	-webkit-transition:all 2s ease-in-out;
+	transition:all 2s ease-in-out;
+}
+#Orient{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 102;
+	background: url("images/hpts.jpg") center center no-repeat;
+	background-size: cover;
+	display: none;
+}
+#qLtempOverlay{
+	display: none !important;
+}
+#qLoverlay{
+	background: url(images/loadingBg.jpg) no-repeat !important;
+}
+#qLpercentage{
+	width: 60px !important;
+	height: 60px !important;
+	line-height: 60px !important;
+	border: 2px solid #fff !important;
+	border-radius: 50% !important;
+	position: absolute !important;
+	left: 380px !important;
+	top: 440px !important;
+	text-align: center !important;
+	color: #fff !important;
+	font-size: 24px !important;
+	margin: 0px !important;
+}
+#wrap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+#wrap .left{
+	position: absolute;
+	left: 0%;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	background: url(images/leftImg.jpg) right top no-repeat;
+}
+#wrap .left .text{
+	position: absolute;
+	right: 40px;
+	top: 300px;
+}
+#wrap .left .line{
+	position: absolute;
+	top: 260px;
+	right: 0px;
+	width: 492px;
+	margin-right: -246px;
+	height: 68px;
+	background: url(images/line.png) center center no-repeat;
+}
+#wrap .right .line{
+	position: absolute;
+	top: 260px;
+	left: 0px;
+	width: 492px;
+	margin-left: -246px;
+	height: 68px;
+	background: url(images/line.png) center center no-repeat;
+}
+#wrap .text{
+	text-align: right;
+	font-size: 105px;
+	color: #fff;
+	margin-bottom: -20px;
+}
+#wrap .right{
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	background: url(images/rightImg.jpg) right bottom no-repeat;
+}
+#wrap .right .text{
+	text-align: left;
+	position: absolute;
+	left: 50px;
+	top: 20px;
+}
+#videoBox{
+	background: #000;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1136px;
+	height: 640px;
+	display: none;
+}
+#videoInnerBox{
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	width: 100%;
+	background-color: #000;
+	height: 100%;
+}
+@-webkit-keyframes leftArrow{
+	0%{
+		-webkit-transform:translateX(0px);
+		transform:translateX(0px); 
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform:translateX(-20px);
+		transform:translateX(-20px); 
+		opacity: 0.3;
+	}
+}
+@-webkit-keyframes rightArrow{
+	0%{
+		-webkit-transform:translateX(0px);
+		transform:translateX(0px); 
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform:translateX(20px);
+		transform:translateX(20px); 
+		opacity: 0.3;
+	}
+}
+#leftArrow{
+	display: none;
+	width: 70px;
+	height: 132px;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	z-index: 100;
+	margin-top: -66px;
+	background: url(images/leftArrow.png) center center no-repeat;
+	-webkit-animation: leftArrow 3s linear infinite;
+	animation: leftArrow 3s linear infinite;
+}
+#rightArrow{
+	width: 70px;
+	height: 132px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	z-index: 100;
+	margin-top: -66px;
+	background: url(images/rightArrow.png) center center no-repeat;
+	-webkit-animation: rightArrow 3s linear infinite;
+	animation: rightArrow 3s linear infinite;
+}
+.closeBtn{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: url(images/closeBtn.png) center center no-repeat;
+	z-index: 100;
+}
+#zhaomu{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 111;
+	display: none;
+}
+.zhaomu{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -346px;
+	margin-top: -225px;
+}
+#zhaomuCloseBtn{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 30px;
+	height: 30px;
+	background: url(images/zhaomuCloseBtn.png) center center no-repeat;
+}
+#weixinMask{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 111;
+	text-align: right;
+	display: none;
+}
+video{
+	width: 100%;
+	height: 100%;
+    vertical-align: baseline;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+}
+</style>
+</head>
+<body>
+<div id="Orient"></div>
+<div id="wrap" style="display:none;">
+	<div class="left">
+		<div class="text">
+			<div class="year">
+				<span id="myYear">1886</span><img src="images/year.png">
+			</div>
+			<p><img src="images/leftTxt.png"></p>
+		</div>
+		<div class="line"></div>
+	</div>
+	<div class="right">
+		<div class="text">
+			<div class="km">
+				<span id="myKm">9863</span><img src="images/km.png">
+			</div>
+			<p><img src="images/rightTxt.png"></p>
+		</div>
+		<div class="line"></div>
+	</div>
+</div>
+<div id="home"></div>
+<div id="main">
+	<span id="leftArrow"></span>
+	<span id="rightArrow"></span>
+	<a href="javascript:void(0)" id="mainCloseBtn" class="closeBtn"></a>
+</div>
+<div id="videoBox">
+	<a href="javascript:void(0)" id="videoCloseBtn" class="closeBtn"></a>
+	<div id="videoInnerBox">
+		<video id="myVideo" x-webkit-airplay="true" webkit-playsinline="true" preload="auto" src="images/video.mp4" poster="images/poster.jpg"></video>
+	</div>
+</div>
+<div id="zhaomu">
+	<div class="zhaomu"><img src="images/zhaomu.png"><a href="javascript:void(0);" id="zhaomuCloseBtn"></a></div>
+</div>
+<div id="weixinMask"><img src="images/weixinMask.png"></div>
+<!--音频部分-->
+<div sytle="display:none;">
+	<audio id="video" loop="loop">
+	  <source src="images/music.mp3" type="audio/mpeg" />
+		Your browser does not support the audio element.
+	</audio>
+</div>
+</body>
+</html>

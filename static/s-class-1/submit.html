@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Expires" CONTENT="-1">
+<title>试乘试驾</title>
+<link type="text/css" rel="stylesheet" href="css/basic.css">
+<meta name="keywords" content="梅赛德斯-奔驰，奔驰，奔驰汽车 ">
+<meta name="description" content="欢迎浏览梅赛德斯-奔驰中国网站。在这里您可以浏览有关奔驰乘用车、AMG、商用汽车，梅赛德斯-奔驰的优质服务、最新消息及活动，一级方程式赛车的精彩信息以及职位招聘的相关信息。 ">
+<!--移动端版本兼容 -->
+<script type="text/javascript">
+	var phoneWidth =  parseInt(window.screen.width);
+	var phoneScale = phoneWidth/640;
+	var ua = navigator.userAgent;
+	if (/Android (\d+\.\d+)/.test(ua)){
+		var version = parseFloat(RegExp.$1);
+		if(version>2.3){
+			document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+		}else{
+			document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+		}
+	} else {
+		document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+	}
+</script>
+</head>
+<body>
+<div class="subMain">
+	<h3 class="title">试乘试驾</h3>
+	<div class="formBox">
+		<ul>
+			<li class="clearfix">
+				<span>姓名：</span>
+				<input id="name" class="inputText" type="text" value="" />
+			</li>
+			<li class="clearfix">
+				<span>称呼：</span>
+				<div class="sex clearfix" id="sex">
+					<div class="sexCom male"><i sexValue="male" class="active"></i>先生</div>
+					<div class="sexCom female"><i sexValue="female"></i>女士</div>
+				</div>
+			</li>
+			<li class="clearfix">
+				<span>电话：</span>
+				<input id="Phone" class="inputText" type="text" value="" />
+			</li>
+			<li class="clearfix">
+				<span>所在地：</span>
+				<input id="address" class="inputText" type="text" value="" />
+			</li>
+			<li class="clearfix">
+				<span>选择经销商：</span>
+				<div class="mselect">
+                    <h4>北京</h4>
+               		<select name="dealerprovince" id="province">
+               		    <option value="安徽">安徽</option>
+               		    <option selected="selected" value="北京">北京</option>
+               		    <option value="福建">福建</option>
+               		    <option value="甘肃">甘肃</option>
+               		    <option value="广东">广东</option>
+               		    <option value="广西">广西</option>
+               		    <option value="贵州">贵州</option>
+               		    <option value="海南">海南</option>
+               		    <option value="河北">河北</option>
+               		    <option value="河南">河南</option>
+               		    <option value="黑龙江">黑龙江</option>
+               		    <option value="湖北">湖北</option>
+               		    <option value="湖南">湖南</option>
+               		    <option value="吉林">吉林</option>
+               		    <option value="江苏">江苏</option>
+               		    <option value="江西">江西</option>
+               		    <option value="辽宁">辽宁</option>
+               		    <option value="内蒙古">内蒙古</option>
+               		    <option value="宁夏">宁夏</option>
+               		    <option value="青海">青海</option>
+               		    <option value="山东">山东</option>
+               		    <option value="山西">山西</option>
+               		    <option value="陕西">陕西</option>
+               		    <option value="上海">上海</option>
+               		    <option value="四川">四川</option>
+               		    <option value="天津">天津</option>
+               		    <option value="西藏">西藏</option>
+               		    <option value="新疆">新疆</option>
+               		    <option value="云南">云南</option>
+               		    <option value="浙江">浙江</option>
+               		    <option value="重庆">重庆</option>
+               		</select>
+                </div>
+				<em>省</em>
+				<div class="mselect">
+                    <h4>北京市</h4>
+					<select name="dealercity" id="city">
+                    	 <option value="北京市">北京市</option>
+                    </select>
+                </div>
+                <em>市</em>
+			</li>
+			<li class="clearfix">
+				<div class="mselect agency">
+                    <h4 data-init="请选择经销商">北京波士通达汽车销售服务有限公司</h4>
+                    <select name="dealer" id="distributor">
+                    	<option selected="selected" value="北京波士通达汽车销售服务有限公司">北京波士通达汽车销售服务有限公司</option>
+                    	<option value="北京博瑞祥驰汽车销售服务中心">北京博瑞祥驰汽车销售服务中心</option>
+                    	<option value="利星行天竺之星汽车有限公司">利星行天竺之星汽车有限公司</option>
+                    	<option value="北京鹏龙星徽汽车销售服务有限公司">北京鹏龙星徽汽车销售服务有限公司</option>
+                    	<option value="北京保利星徽汽车销售服务有限公司">北京保利星徽汽车销售服务有限公司</option>
+                    	<option value="北京之星汽车服务有限公司">北京之星汽车服务有限公司</option>
+                    	<option value="利星行之星（北京）汽车有限公司">利星行之星（北京）汽车有限公司</option>
+                    	<option value="北京亚奥之星汽车服务有限公司">北京亚奥之星汽车服务有限公司</option>
+                    	<option value="北京市北奔汽车修理厂">北京市北奔汽车修理厂</option>
+                    	<option value="北京百得利之星汽车销售有限公司">北京百得利之星汽车销售有限公司</option>
+                    	<option value="利星行（北京）汽车有限公司">利星行（北京）汽车有限公司</option>
+                    	<option value="利星行平治（北京）汽车有限公司">利星行平治（北京）汽车有限公司</option>
+                    	<option value="北京鹏龙星徽汽车销售服务有限公司崇文展厅">北京鹏龙星徽汽车销售服务有限公司崇文展厅</option>
+                    	<option value="北京鹏龙大道汽车销售服务有限公司">北京鹏龙大道汽车销售服务有限公司</option>
+                    	<option value="北京波士诚达汽车销售服务有限公司">北京波士诚达汽车销售服务有限公司</option>
+                    	<option value="北京星徽旗舰汽车销售服务中心有限公司">北京星徽旗舰汽车销售服务中心有限公司</option>
+                    	<option value="利星行平治（北京）汽车服务有限公司">利星行平治（北京）汽车服务有限公司</option>
+                    	<option value="北京波士瑞达汽车销售服务有限公司">北京波士瑞达汽车销售服务有限公司</option>
+                    </select>
+                </div>
+			</li>
+			<li class="clearfix">
+				<span>意向购车时间：</span>
+				<div class="mselect agency_2">
+					<h4 data-init="请选择经时间">半年</h4>
+					<select name="time" id="buyTime">
+					 	<option selected="selected" value="1个月">1个月</option>
+                         	<option value="3个月">3个月</option>
+                         	<option value="6个月">6个月</option>
+                         	<option value="1年">1年</option>
+                         	<option value="1年以上">1年以上</option>
+					</select>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="agree clearfix">
+		<i class="active"></i>
+		<p>我仔细阅读了并接受所附的隐私条款，并且我同意其他戴姆勒集团公司及/或北京梅赛德斯-奔驰销售服务有限公司及/或授权经销商收集、使用、分享我的私人信息；同时我同意北京梅赛德斯-奔驰销售服务有限公司和/或梅赛德斯-奔驰（中国）汽车销售有限公司向我发送相关市场或营销资料。</p>
+	</div>
+	<div class="submit"><a id="submitForm" href="javascript:void(0);" class="submitBtn">提交</a></div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/submit.js"></script>
+</body>
+</html>
