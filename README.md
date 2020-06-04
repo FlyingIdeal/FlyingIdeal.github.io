@@ -1,6 +1,6 @@
 # flyidealwebsite
 
-> this is my website
+> this is my website flyideal.work
 
 ## Build Setup
 
