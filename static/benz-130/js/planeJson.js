@@ -41,7 +41,8 @@ var oldPlaneImgData = {
         'src': 'images/oldBg.jpg'
     },
     'planeArr': [{
-        'planes': [{
+        'planes': [
+        /*{
             'name': 'op1_1',
             'w': 1138,
             'h': 640,
@@ -49,7 +50,8 @@ var oldPlaneImgData = {
             'y': -50,
             'z': 100,
             'src': 'images/op1_1.png'
-        }, {
+        }, */
+        {
             'name': 'op1_2',
             'w': 624,
             'h': 262,

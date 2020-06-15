@@ -5,11 +5,6 @@
 <title>梅赛德斯-奔驰130周年</title>
 <meta name="viewport" content="width=1136, target-densitydpi=device-dpi, user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="js/shrek.js"></script>
-<script src="js/queryloader.js"></script>
-<script src="js/planeJson.js"></script>
-<script src="js/main.js"></script>
 <style type="text/css">
 body{
 	background: #000;
@@ -42,7 +37,7 @@ div,canvas,video,p,span,img,source{
 	width: 100%;
 	height: 100%;
 	z-index: 102;
-	background: url("images/hpts.jpg") center center no-repeat;
+	background: url("./images/hpts.jpg") center center no-repeat;
 	background-size: cover;
 	display: none;
 }
@@ -50,7 +45,7 @@ div,canvas,video,p,span,img,source{
 	display: none !important;
 }
 #qLoverlay{
-	background: url(images/loadingBg.jpg) no-repeat !important;
+	background: url("./images/loadingBg.jpg") no-repeat !important;
 }
 #qLpercentage{
 	width: 60px !important;
@@ -80,7 +75,7 @@ div,canvas,video,p,span,img,source{
 	width: 50%;
 	height: 100%;
 	overflow: hidden;
-	background: url(images/leftImg.jpg) right top no-repeat;
+	background: url("./images/leftImg.jpg") right top no-repeat;
 }
 #wrap .left .text{
 	position: absolute;
@@ -94,7 +89,7 @@ div,canvas,video,p,span,img,source{
 	width: 492px;
 	margin-right: -246px;
 	height: 68px;
-	background: url(images/line.png) center center no-repeat;
+	background: url("./images/line.png") center center no-repeat;
 }
 #wrap .right .line{
 	position: absolute;
@@ -103,7 +98,7 @@ div,canvas,video,p,span,img,source{
 	width: 492px;
 	margin-left: -246px;
 	height: 68px;
-	background: url(images/line.png) center center no-repeat;
+	background: url("./images/line.png") center center no-repeat;
 }
 #wrap .text{
 	text-align: right;
@@ -118,7 +113,7 @@ div,canvas,video,p,span,img,source{
 	width: 50%;
 	height: 100%;
 	overflow: hidden;
-	background: url(images/rightImg.jpg) right bottom no-repeat;
+	background: url("./images/rightImg.jpg") right bottom no-repeat;
 }
 #wrap .right .text{
 	text-align: left;
@@ -176,7 +171,7 @@ div,canvas,video,p,span,img,source{
 	top: 50%;
 	z-index: 100;
 	margin-top: -66px;
-	background: url(images/leftArrow.png) center center no-repeat;
+	background: url("./images/leftArrow.png") center center no-repeat;
 	-webkit-animation: leftArrow 3s linear infinite;
 	animation: leftArrow 3s linear infinite;
 }
@@ -188,7 +183,7 @@ div,canvas,video,p,span,img,source{
 	top: 50%;
 	z-index: 100;
 	margin-top: -66px;
-	background: url(images/rightArrow.png) center center no-repeat;
+	background: url("./images/rightArrow.png") center center no-repeat;
 	-webkit-animation: rightArrow 3s linear infinite;
 	animation: rightArrow 3s linear infinite;
 }
@@ -198,7 +193,7 @@ div,canvas,video,p,span,img,source{
 	position: absolute;
 	right: 20px;
 	top: 20px;
-	background: url(images/closeBtn.png) center center no-repeat;
+	background: url("./images/closeBtn.png") center center no-repeat;
 	z-index: 100;
 }
 #zhaomu{
@@ -224,7 +219,7 @@ div,canvas,video,p,span,img,source{
 	top: 30px;
 	width: 30px;
 	height: 30px;
-	background: url(images/zhaomuCloseBtn.png) center center no-repeat;
+	background: url("./images/zhaomuCloseBtn.png") center center no-repeat;
 }
 #weixinMask{
 	position: absolute;
@@ -255,18 +250,18 @@ video{
 	<div class="left">
 		<div class="text">
 			<div class="year">
-				<span id="myYear">1886</span><img src="images/year.png">
+				<span id="myYear">1886</span><img src="./images/year.png">
 			</div>
-			<p><img src="images/leftTxt.png"></p>
+			<p><img src="./images/leftTxt.png"></p>
 		</div>
 		<div class="line"></div>
 	</div>
 	<div class="right">
 		<div class="text">
 			<div class="km">
-				<span id="myKm">9863</span><img src="images/km.png">
+				<span id="myKm">9863</span><img src="./images/km.png">
 			</div>
-			<p><img src="images/rightTxt.png"></p>
+			<p><img src="./images/rightTxt.png"></p>
 		</div>
 		<div class="line"></div>
 	</div>
@@ -280,19 +275,26 @@ video{
 <div id="videoBox">
 	<a href="javascript:void(0)" id="videoCloseBtn" class="closeBtn"></a>
 	<div id="videoInnerBox">
-		<video id="myVideo" x-webkit-airplay="true" webkit-playsinline="true" preload="auto" src="images/video.mp4" poster="images/poster.jpg"></video>
+		<video id="myVideo" x-webkit-airplay="true" webkit-playsinline="true" preload="auto" src="http://player.alicdn.com/video/editor.mp4" poster="./images/poster.jpg"></video>
 	</div>
 </div>
 <div id="zhaomu">
-	<div class="zhaomu"><img src="images/zhaomu.png"><a href="javascript:void(0);" id="zhaomuCloseBtn"></a></div>
+	<div class="zhaomu"><img src="./images/zhaomu.png"><a href="javascript:void(0);" id="zhaomuCloseBtn"></a></div>
 </div>
-<div id="weixinMask"><img src="images/weixinMask.png"></div>
+<div id="weixinMask"><img src="./images/weixinMask.png"></div>
 <!--音频部分-->
 <div sytle="display:none;">
 	<audio id="video" loop="loop">
-	  <source src="images/music.mp3" type="audio/mpeg" />
+	  <source src="./images/music.mp3" type="audio/mpeg" />
 		Your browser does not support the audio element.
 	</audio>
 </div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/touchjs/0.2.14/touch.js"></script>
+<script src="js/shrek.js"></script>
+<script src="js/queryloader.js"></script>
+<script src="js/planeJson.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

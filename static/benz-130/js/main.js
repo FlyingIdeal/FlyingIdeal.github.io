@@ -17,9 +17,9 @@ var homeworld = new C3D.Sprite();
 
 $(document).ready(function() {
 
-    touch.on('body', 'touchmove', function(ev) {
-        ev.preventDefault();
-    });
+    // touch.on('body', 'touchmove', function(ev) {
+    //     ev.preventDefault();
+    // });
     screenOrient();
 
     initVideoData();
@@ -169,7 +169,6 @@ function wrapNumChange() {
             audioPlay();
             playHistoryAni();
             initStage();
-            _hmt.push(['_trackEvent', 'leftToRight', 'click', '从左向右']); //统计
         })
     });
 
@@ -187,7 +186,6 @@ function wrapNumChange() {
             playHistoryAni();
             initStage();
             $('#wrap,#home,#main').hide();
-            _hmt.push(['_trackEvent', 'rightToLeft', 'click', '从右向左']); //统计
         })
     })
 }
@@ -206,7 +204,6 @@ function videoPlay() {
         $('#myVideo').get(0).pause();
         $('#home').fadeIn();
         setCurTime();
-        _hmt.push(['_trackEvent', 'videoCloseBtn', 'click', '视频关闭按钮']); //统计
     })
 }
 
@@ -238,14 +235,12 @@ function initStage() {
     first_btn_1.on('click', function() {
         $('#wrap,#home,#main').hide();
         videoPlay();
-        _hmt.push(['_trackEvent', 'homeHeart', 'click', '让心给出答案']); //统计
     });
 
     //首页-让未来给出答案
     var first_btn_2 = new C3D.Plane();
     generatePlane(first_btn_2, 259, 436, 340, 60, 0, 'images/first_btn_2.png', homeBgSprite);
     first_btn_2.on('click', function() {
-        _hmt.push(['_trackEvent', 'homeWeilai', 'click', '让未来给出答案']); //统计
         audioPlay();
         $('#home').fadeOut();
         $('#main').fadeIn();
@@ -255,7 +250,6 @@ function initStage() {
     var zhaomuBtn = new C3D.Plane();
     generatePlane(zhaomuBtn, 114, 142, 950, 180, 0, 'images/zhaomuBtn.png', homeBgSprite);
     zhaomuBtn.on('click', function() {
-        _hmt.push(['_trackEvent', 'zhaomu', 'click', '招募活动']); //统计
         $('#zhaomu').fadeIn();
     })
 
@@ -267,7 +261,6 @@ function initStage() {
     var weixinBtn = new C3D.Plane();
     generatePlane(weixinBtn, 114, 142, 950, 350, 0, 'images/weixinBtn.png', homeBgSprite);
     weixinBtn.on('click', function() {
-        _hmt.push(['_trackEvent', 'weixin', 'click', '微信分享按钮']); //统计
         $('#weixinMask').fadeIn();
     });
 
@@ -448,8 +441,6 @@ function touchEvent() {
                 }
             })
         });
-
-        _hmt.push(['_trackEvent', 'mainCloseBtn', 'click', '科技关闭按钮']); //统计
     })
 
 }
